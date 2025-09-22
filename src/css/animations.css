@@ -16,3 +16,15 @@
   100%{transform:translateY(0)}
 }
 .floating{animation:floatSlow 6s ease-in-out infinite}
+
+/* Page transitions */
+@keyframes pageIn{
+  0%{opacity:0; transform:translateY(8px)}
+  100%{opacity:1; transform:none}
+}
+@keyframes pageOut{
+  0%{opacity:1; transform:none}
+  100%{opacity:0; transform:translateY(8px)}
+}
+#main-content.page-enter{animation:pageIn .42s ease both}
+#main-content.page-exit{animation:pageOut .22s ease both}

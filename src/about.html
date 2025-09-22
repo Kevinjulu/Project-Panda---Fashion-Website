@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Neon Kenya</title>
+  <meta name="description" content="About Neon Kenya — premium Kenyan fashion designer and model with a neon aesthetic." />
+  <meta name="keywords" content="Kenya fashion, designer bio, model, Nairobi" />
+  <link rel="canonical" href="http://localhost:3000/about.html" />
+  <meta property="og:title" content="About — Neon Kenya" />
+  <meta property="og:description" content="Premium Kenyan fashion designer and model with a neon aesthetic." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="http://localhost:3000/about.html" />
+  <meta property="og:image" content="/images/og-about.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About — Neon Kenya" />
+  <meta name="twitter:description" content="Premium Kenyan fashion designer and model with a neon aesthetic." />
+  <meta name="twitter:image" content="/images/og-about.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Manrope:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"ProfilePage",
+    "name":"About — Neon Kenya",
+    "url":"http://localhost:3000/about.html",
+    "isPartOf":{"@type":"WebSite","name":"Neon Kenya"}
+  }</script>
+</head>
+<body>
+  <canvas id="particles" class="particles"></canvas>
+  <header class="navbar glass" role="banner">
+    <div class="nav-left">
+      <a href="/index.html" class="brand">
+        <img src="/images/logo.svg" alt="Designer logo" class="logo" />
+        <span class="brand-name">NEON KENYA</span>
+      </a>
+    </div>
+    <nav class="nav-center" role="navigation" aria-label="Main navigation">
+      <a href="/index.html" class="nav-link"><i class="ri-home-5-line"></i> Home</a>
+      <a href="/about.html" class="nav-link active"><i class="ri-user-3-line"></i> About</a>
+      <a href="/portfolio.html" class="nav-link"><i class="ri-gallery-line"></i> Portfolio</a>
+      <a href="/contact.html" class="nav-link"><i class="ri-send-plane-line"></i> Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="btn btn-secondary"><i class="ri-login-circle-line"></i> Login</button>
+      <a class="btn btn-accent" href="/contact.html"><i class="ri-flashlight-line"></i> Sign Up Free</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section reveal" aria-label="Bio">
+      <h1 class="section-title">About</h1>
+      <div class="card glass">
+        <div class="card-body">
+          <p>
+            Neon Kenya blends couture craftsmanship with a bold neon aesthetic. From runway collections to editorial features,
+            the work focuses on premium textures, contemporary silhouettes, and vibrant storytelling rooted in Kenya.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass" role="contentinfo">
+    <p>© <span id="year"></span> Neon Kenya — Fashion Designer & Model</p>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

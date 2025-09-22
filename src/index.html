@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neon Kenya — Fashion Designer & Model</title>
+  <meta name="description" content="Premium Kenyan fashion designer and model. Neon aesthetic, couture craftsmanship, and editorial styling." />
+  <meta name="keywords" content="Kenya fashion designer, couture, runway, editorial, model, Nairobi" />
+  <link rel="canonical" href="http://localhost:3000/index.html" />
+  <meta property="og:title" content="Neon Kenya — Fashion Designer & Model" />
+  <meta property="og:description" content="Premium Kenyan fashion designer and model. Neon aesthetic, couture craftsmanship, and editorial styling." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost:3000/index.html" />
+  <meta property="og:image" content="/images/og-home.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Neon Kenya — Fashion Designer & Model" />
+  <meta name="twitter:description" content="Premium Kenyan fashion designer and model. Neon aesthetic, couture craftsmanship, and editorial styling." />
+  <meta name="twitter:image" content="/images/og-home.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Manrope:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Neon Kenya",
+    "url":"http://localhost:3000/",
+    "jobTitle":"Fashion Designer and Model",
+    "address":{"@type":"PostalAddress","addressCountry":"KE"}
+  }</script>
+</head>
+<body>
+  <canvas id="particles" class="particles"></canvas>
+  <header class="navbar glass" role="banner">
+    <div class="nav-left">
+      <a href="/index.html" class="brand">
+        <img src="/images/logo.svg" alt="Designer logo" class="logo" />
+        <span class="brand-name">NEON KENYA</span>
+      </a>
+    </div>
+    <nav class="nav-center" role="navigation" aria-label="Main navigation">
+      <a href="/index.html" class="nav-link active"><i class="ri-home-5-line"></i> Home</a>
+      <a href="/about.html" class="nav-link"><i class="ri-user-3-line"></i> About</a>
+      <a href="/portfolio.html" class="nav-link"><i class="ri-gallery-line"></i> Portfolio</a>
+      <a href="/contact.html" class="nav-link"><i class="ri-send-plane-line"></i> Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="btn btn-secondary"><i class="ri-login-circle-line"></i> Login</button>
+      <a class="btn btn-accent" href="/contact.html"><i class="ri-flashlight-line"></i> Sign Up Free</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section reveal" aria-label="Hero">
+      <div>
+        <h1 class="headline">Make a Statement in Neon</h1>
+        <p class="subheadline">Runway to editorial — premium Kenyan design with bold, modern energy.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary glow" href="/portfolio.html"><i class="ri-rocket-2-line"></i> View Portfolio</a>
+          <a class="btn btn-secondary" href="/contact.html"><i class="ri-message-3-line"></i> Book a Consult</a>
+        </div>
+        <div class="trust" aria-label="Trust badges">
+          <span class="badge">Trusted by brands across Kenya</span>
+        </div>
+      </div>
+      <div class="hero-media floating">
+        <img src="/images/hero.svg" alt="Neon fashion hero" />
+      </div>
+    </section>
+
+    <section class="section reveal" aria-label="Highlights">
+      <div class="grid achievements-grid">
+        <div class="card glass">
+          <div class="card-body">
+            <h3><i class="ri-star-smile-line"></i> Couture Craft</h3>
+            <p>Hand-finished pieces with neon elegance.</p>
+          </div>
+        </div>
+        <div class="card glass">
+          <div class="card-body">
+            <h3><i class="ri-camera-3-line"></i> Editorial Edge</h3>
+            <p>Looks built for covers and campaigns.</p>
+          </div>
+        </div>
+        <div class="card glass">
+          <div class="card-body">
+            <h3><i class="ri-walk-line"></i> Runway Ready</h3>
+            <p>Statement silhouettes with premium finish.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass" role="contentinfo">
+    <p>© <span id="year"></span> Neon Kenya — Fashion Designer & Model</p>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

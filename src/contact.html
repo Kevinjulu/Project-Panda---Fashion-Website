@@ -5,14 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact — Neon Kenya</title>
   <meta name="description" content="Book a consultation or collaboration. Send a message with service type and details." />
+  <meta name="keywords" content="Kenya fashion, consultation, booking, designer, model" />
+  <link rel="canonical" href="http://localhost:3000/contact.html" />
+  <meta property="og:title" content="Contact — Neon Kenya" />
+  <meta property="og:description" content="Book a consultation or collaboration. Send a message with service type and details." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost:3000/contact.html" />
+  <meta property="og:image" content="/images/og-contact.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — Neon Kenya" />
+  <meta name="twitter:description" content="Book a consultation or collaboration. Send a message with service type and details." />
+  <meta name="twitter:image" content="/images/og-contact.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Manrope:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="/favicon.ico" />
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/animations.css" />
+  <script type="application/ld+json">{
+    "@context":"https://schema.org","@type":"ContactPage","name":"Contact — Neon Kenya","url":"http://localhost:3000/contact.html","isPartOf":{"@type":"WebSite","name":"Neon Kenya"}
+  }</script>
 </head>
 <body>
   <canvas id="particles" class="particles"></canvas>
@@ -24,14 +38,14 @@
       </a>
     </div>
     <nav class="nav-center" role="navigation" aria-label="Main navigation">
-      <a href="/index.html" class="nav-link">Home</a>
-      <a href="/about.html" class="nav-link">About</a>
-      <a href="/portfolio.html" class="nav-link">Portfolio</a>
-      <a href="/contact.html" class="nav-link active">Contact</a>
+      <a href="/index.html" class="nav-link"><i class="ri-home-5-line"></i> Home</a>
+      <a href="/about.html" class="nav-link"><i class="ri-user-3-line"></i> About</a>
+      <a href="/portfolio.html" class="nav-link"><i class="ri-gallery-line"></i> Portfolio</a>
+      <a href="/contact.html" class="nav-link active"><i class="ri-send-plane-line"></i> Contact</a>
     </nav>
     <div class="nav-right">
-      <button class="btn btn-secondary">Login</button>
-      <a class="btn btn-accent" href="/contact.html">Sign Up Free</a>
+      <button class="btn btn-secondary"><i class="ri-login-circle-line"></i> Login</button>
+      <a class="btn btn-accent" href="/contact.html"><i class="ri-flashlight-line"></i> Sign Up Free</a>
     </div>
   </header>
 
@@ -61,7 +75,7 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project..."></textarea>
         </div>
-        <button class="btn btn-primary" type="submit">Send</button>
+        <button class="btn btn-primary" type="submit"><i class="ri-send-plane-2-line"></i> Send</button>
         <p id="form-status" role="status" aria-live="polite" class="status"></p>
       </form>
     </section>

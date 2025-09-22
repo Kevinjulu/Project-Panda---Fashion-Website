@@ -5,6 +5,40 @@ import './notifications.js';
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
+// Page transition: enter on load
+const main = document.getElementById('main-content');
+if (main){
+  requestAnimationFrame(()=> main.classList.add('page-enter'));
+}
+
+// Sync active nav link based on current path
+(function syncActiveNav(){
+  const file = (location.pathname.split('/').pop()||'index.html');
+  document.querySelectorAll('.nav-link').forEach(link=>{
+    link.classList.remove('is-active');
+    link.removeAttribute('aria-current');
+    const href = link.getAttribute('href')||'';
+    if(href.endsWith(file)){
+      link.classList.add('is-active');
+      link.setAttribute('aria-current','page');
+    }
+  });
+})();
+
+// Intercept internal navigation for a smooth exit animation
+document.addEventListener('click', (e)=>{
+  const a = e.target.closest('a');
+  if(!a) return;
+  const href = a.getAttribute('href')||'';
+  const isInternal = href && !href.startsWith('http') && href.endsWith('.html');
+  if(isInternal && main){
+    e.preventDefault();
+    main.classList.remove('page-enter');
+    main.classList.add('page-exit');
+    setTimeout(()=>{ window.location.href = href; }, 220);
+  }
+});
+
 // Scroll reveal
 const observer = new IntersectionObserver((entries)=>{
   entries.forEach(e=>{
