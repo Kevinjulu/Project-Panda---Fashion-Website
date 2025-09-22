@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Client Testimonials — Neon Kenya</title>
+  <meta name="description" content="Read authentic testimonials from satisfied clients, celebrities, and fashion industry professionals who have worked with Neon Kenya's design and modeling services." />
+  <meta name="keywords" content="fashion testimonials Kenya, client reviews, celebrity styling testimonials, fashion designer reviews, modeling testimonials" />
+  <link rel="canonical" href="https://neonkenya.com/testimonials" />
+  <meta property="og:title" content="Client Testimonials — Neon Kenya" />
+  <meta property="og:description" content="Authentic testimonials from clients, celebrities, and industry professionals." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://neonkenya.com/testimonials" />
+  <meta property="og:image" content="/public/images/og-testimonials.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Manrope:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/public/images/favicon.svg" />
+  <link rel="stylesheet" href="src/css/styles.css" />
+  <link rel="stylesheet" href="src/css/components.css" />
+  <link rel="stylesheet" href="src/css/animations.css" />
+</head>
+<body>
+  <canvas id="particles" class="particles"></canvas>
+  <header class="navbar glass" role="banner">
+    <div class="nav-left">
+      <a href="/" class="brand">
+        <img src="public/images/logo.svg" alt="Neon Kenya logo" class="logo" />
+        <span class="brand-name">NEON KENYA</span>
+      </a>
+    </div>
+    <nav class="nav-center" role="navigation" aria-label="Main navigation">
+      <a href="/" class="nav-link">Home</a>
+      <a href="/services.html" class="nav-link">Services</a>
+      <a href="/testimonials.html" class="nav-link active">Testimonials</a>
+      <a href="/blog.html" class="nav-link">Blog</a>
+      <a href="/src/contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="btn btn-secondary">Share Review</button>
+      <a class="btn btn-accent" href="/services.html">Book Services</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Testimonials Hero Section -->
+    <section class="section reveal testimonials-hero" aria-label="Testimonials introduction">
+      <div class="testimonials-hero-content">
+        <h1 class="section-title">Client Testimonials</h1>
+        <p class="section-subtitle">
+          Discover what clients, celebrities, and fashion industry professionals say about 
+          working with Neon Kenya. Every testimonial reflects our commitment to excellence and authentic style.
+        </p>
+        <div class="testimonials-stats">
+          <div class="stat-item">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4.9/5</span>
+            <span class="stat-label">Average Rating</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">95%</span>
+            <span class="stat-label">Return Clients</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Testimonial -->
+    <section class="section reveal featured-testimonial" aria-label="Featured testimonial">
+      <div class="featured-content">
+        <div class="testimonial-quote glass">
+          <div class="quote-mark">"</div>
+          <blockquote>
+            Working with Neon Kenya was transformational. The custom wedding gown she designed 
+            for me perfectly captured both my personality and our Kenyan heritage. Every detail 
+            was meticulously crafted, and the result was beyond my dreams.
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-image">
+              <img src="public/images/gallery-1.svg" alt="Amara Ochieng" />
+            </div>
+            <div class="author-info">
+              <div class="author-name">Amara Ochieng</div>
+              <div class="author-title">TV Personality & Entrepreneur</div>
+              <div class="author-location">Nairobi, Kenya</div>
+            </div>
+          </div>
+          <div class="rating">
+            <span class="stars">⭐⭐⭐⭐⭐</span>
+            <span class="rating-text">5.0 out of 5</span>
+          </div>
+        </div>
+        <div class="testimonial-image">
+          <img src="public/images/gallery-2.svg" alt="Custom wedding gown design" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Categories -->
+    <section class="section reveal testimonial-filters" aria-label="Testimonial categories">
+      <h2 class="section-title">Client Experiences</h2>
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-category="all">All Reviews</button>
+        <button class="filter-tab" data-category="fashion-design">Fashion Design</button>
+        <button class="filter-tab" data-category="modeling">Modeling Services</button>
+        <button class="filter-tab" data-category="weddings">Weddings & Events</button>
+        <button class="filter-tab" data-category="celebrities">Celebrity Clients</button>
+      </div>
+    </section>
+
+    <!-- Testimonials Grid -->
+    <section class="section reveal testimonials-grid" aria-label="Client testimonials">
+      <div class="testimonials-container" id="testimonials-container">
+        
+        <!-- Testimonial 1: Fashion Design -->
+        <article class="testimonial-card glass" data-category="fashion-design">
+          <div class="testimonial-header">
+            <div class="client-image">
+              <img src="public/images/gallery-3.svg" alt="Sarah Mwangi" />
+            </div>
+            <div class="client-info">
+              <div class="client-name">Sarah Mwangi</div>
+              <div class="client-title">Business Executive</div>
+              <div class="service-type">Custom Business Wardrobe</div>
+            </div>
+            <div class="rating">
+              <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+          </div>
+          <blockquote class="testimonial-text">
+            "The professional wardrobe Neon Kenya designed for me has transformed my confidence in the boardroom. 
+            Each piece reflects my personality while maintaining the sophisticated look I need for business. 
+            The attention to detail and cultural elements make every outfit unique."
+          </blockquote>
+          <div class="testimonial-footer">
+            <time datetime="2024-08-15">August 2024</time>
+            <span class="service-tag">Custom Design</span>
+          </div>
+        </article>
+
+        <!-- Testimonial 2: Modeling -->
+        <article class="testimonial-card glass" data-category="modeling">
+          <div class="testimonial-header">
+            <div class="client-image">
+              <img src="public/images/hero.svg" alt="David Kimani" />
+            </div>
+            <div class="client-info">
+              <div class="client-name">David Kimani</div>
+              <div class="client-title">Fashion Photographer</div>
+              <div class="service-type">Editorial Modeling</div>
+            </div>
+            <div class="rating">
+              <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+          </div>
+          <blockquote class="testimonial-text">
+            "Working with Neon Kenya as a model for our African fashion editorial was incredible. 
+            She brings such authenticity and grace to every shot. Her understanding of fashion 
+            and cultural aesthetics made our collaboration seamless and the results stunning."
+          </blockquote>
+          <div class="testimonial-footer">
+            <time datetime="2024-07-20">July 2024</time>
+            <span class="service-tag">Editorial Shoot</span>
+          </div>
+        </article>
+
+        <!-- Testimonial 3: Wedding -->
+        <article class="testimonial-card glass" data-category="weddings">
+          <div class="testimonial-header">
+            <div class="client-image">
+              <img src="public/images/gallery-1.svg" alt="Grace & Peter Odongo" />
+            </div>
+            <div class="client-info">
+              <div class="client-name">Grace & Peter Odongo</div>
+              <div class="client-title">Newlyweds</div>
+              <div class="service-type">Wedding Styling</div>
+            </div>
+            <div class="rating">
+              <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+          </div>
+          <blockquote class="testimonial-text">
+            "Our dream wedding came to life thanks to Neon Kenya's exceptional styling. 
+            She created a perfect blend of modern elegance and traditional Kenyan elements 
+            for both our outfits. Every guest commented on how beautiful and meaningful our attire was."
+          </blockquote>
+          <div class="testimonial-footer">
+            <time datetime="2024-06-10">June 2024</time>
+            <span class="service-tag">Wedding Design</span>
+          </div>
+        </article>
+
+        <!-- Testimonial 4: Celebrity -->
+        <article class="testimonial-card glass" data-category="celebrities">
+          <div class="testimonial-header">
+            <div class="client-image">
+              <img src="public/images/gallery-2.svg" alt="Zara Muthoni" />
+            </div>
+            <div class="client-info">
+              <div class="client-name">Zara Muthoni</div>
+              <div class="client-title">Recording Artist</div>
+              <div class="service-type">Red Carpet Styling</div>
+            </div>
+            <div class="rating">
+              <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+          </div>
+          <blockquote class="testimonial-text">
+            "For my album launch event, Neon Kenya created a show-stopping outfit that perfectly 
+            represented my artistic vision and Kenyan roots. The press coverage was amazing, 
+            and everyone wanted to know about the designer. Truly exceptional work!"
+          </blockquote>
+          <div class="testimonial-footer">
+            <time datetime="2024-09-05">September 2024</time>
+            <span class="service-tag">Celebrity Styling</span>
+          </div>
+        </article>
+
+        <!-- Testimonial 5: Fashion Design -->
+        <article class="testimonial-card glass" data-category="fashion-design">
+          <div class="testimonial-header">
+            <div class="client-image">
+              <img src="public/images/gallery-3.svg" alt="Michael Otieno" />
+            </div>
+            <div class="client-info">
+              <div class="client-name">Michael Otieno</div>
+              <div class="client-title">Fashion Boutique Owner</div>
+              <div class="service-type">Collection Development</div>
+            </div>
+            <div class="rating">
+              <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+          </div>
+          <blockquote class="testimonial-text">
+            "Collaborating with Neon Kenya to develop our boutique's signature collection was the best 
+            business decision we made. Her designs flew off our racks, and customers keep asking for more. 
+            Her understanding of both local and international markets is impressive."
+          </blockquote>
+          <div class="testimonial-footer">
+            <time datetime="2024-05-22">May 2024</time>
+            <span class="service-tag">Commercial Design</span>
+          </div>
+        </article>
+
+        <!-- Testimonial 6: Modeling -->
+        <article class="testimonial-card glass" data-category="modeling">
+          <div class="testimonial-header">
+            <div class="client-image">
+              <img src="public/images/hero.svg" alt="Linda Wanjiru" />
+            </div>
+            <div class="client-info">
+              <div class="client-name">Linda Wanjiru</div>
+              <div class="client-title">Event Organizer</div>
+              <div class="service-type">Fashion Show Modeling</div>
+            </div>
+            <div class="rating">
+              <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+          </div>
+          <blockquote class="testimonial-text">
+            "Having Neon Kenya model in our charity fashion show was incredible. Her professionalism 
+            and stage presence elevated the entire event. She worked beautifully with other models 
+            and truly embodied the spirit of our cause. A true professional!"
+          </blockquote>
+          <div class="testimonial-footer">
+            <time datetime="2024-04-18">April 2024</time>
+            <span class="service-tag">Runway Modeling</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="section reveal success-stories" aria-label="Success stories">
+      <h2 class="section-title">Transformation Stories</h2>
+      <div class="stories-grid">
+        
+        <div class="story-card glass">
+          <div class="story-image">
+            <img src="public/images/gallery-1.svg" alt="Before and after styling transformation" />
+          </div>
+          <div class="story-content">
+            <h3>Corporate Executive Makeover</h3>
+            <p class="story-description">
+              Complete wardrobe transformation for a banking executive, incorporating 
+              African prints into professional attire while maintaining corporate standards.
+            </p>
+            <div class="story-results">
+              <div class="result-item">
+                <strong>25% increase</strong> in client confidence
+              </div>
+              <div class="result-item">
+                <strong>3 promotions</strong> within 18 months
+              </div>
+            </div>
+            <a href="/services.html" class="btn btn-outline">Start Your Transformation</a>
+          </div>
+        </div>
+
+        <div class="story-card glass">
+          <div class="story-image">
+            <img src="public/images/gallery-2.svg" alt="Wedding styling success story" />
+          </div>
+          <div class="story-content">
+            <h3>Dream Wedding Collection</h3>
+            <p class="story-description">
+              Designed a complete wedding collection for a traditional Kenyan ceremony 
+              that honored cultural heritage while embracing contemporary elegance.
+            </p>
+            <div class="story-results">
+              <div class="result-item">
+                <strong>5 awards</strong> at Kenya Wedding Awards
+              </div>
+              <div class="result-item">
+                <strong>Featured</strong> in 3 magazines
+              </div>
+            </div>
+            <a href="/services.html" class="btn btn-outline">Plan Your Wedding</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Industry Recognition -->
+    <section class="section reveal industry-recognition" aria-label="Industry recognition">
+      <h2 class="section-title">Industry Recognition</h2>
+      <div class="recognition-grid">
+        
+        <div class="recognition-item glass">
+          <div class="recognition-logo">
+            <span class="award-icon">🏆</span>
+          </div>
+          <div class="recognition-content">
+            <h3>Best Emerging Designer 2024</h3>
+            <p>Kenya Fashion Awards</p>
+            <span class="recognition-year">2024</span>
+          </div>
+        </div>
+
+        <div class="recognition-item glass">
+          <div class="recognition-logo">
+            <span class="award-icon">⭐</span>
+          </div>
+          <div class="recognition-content">
+            <h3>Excellence in Cultural Fashion</h3>
+            <p>African Fashion Council</p>
+            <span class="recognition-year">2024</span>
+          </div>
+        </div>
+
+        <div class="recognition-item glass">
+          <div class="recognition-logo">
+            <span class="award-icon">🎖️</span>
+          </div>
+          <div class="recognition-content">
+            <h3>Sustainable Fashion Leader</h3>
+            <p>East Africa Sustainability Awards</p>
+            <span class="recognition-year">2023</span>
+          </div>
+        </div>
+
+        <div class="recognition-item glass">
+          <div class="recognition-logo">
+            <span class="award-icon">🌟</span>
+          </div>
+          <div class="recognition-content">
+            <h3>Rising Model of the Year</h3>
+            <p>Nairobi Fashion Week</p>
+            <span class="recognition-year">2023</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Client Review Form -->
+    <section class="section reveal review-form-section" aria-label="Leave a review">
+      <div class="review-form-container">
+        <div class="review-form-intro">
+          <h2>Share Your Experience</h2>
+          <p>Help others discover exceptional fashion design and modeling services. Your review matters!</p>
+        </div>
+        <form class="review-form glass" aria-label="Submit review">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="reviewer-name">Your Name</label>
+              <input type="text" id="reviewer-name" name="name" required placeholder="Enter your full name" />
+            </div>
+            <div class="form-group">
+              <label for="service-type">Service Type</label>
+              <select id="service-type" name="service" required>
+                <option value="">Select service</option>
+                <option value="fashion-design">Fashion Design</option>
+                <option value="modeling">Modeling Services</option>
+                <option value="wedding-styling">Wedding Styling</option>
+                <option value="consultation">Fashion Consultation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="rating">Your Rating</label>
+            <div class="rating-input" id="rating-input">
+              <button type="button" class="star-btn" data-rating="1">⭐</button>
+              <button type="button" class="star-btn" data-rating="2">⭐</button>
+              <button type="button" class="star-btn" data-rating="3">⭐</button>
+              <button type="button" class="star-btn" data-rating="4">⭐</button>
+              <button type="button" class="star-btn" data-rating="5">⭐</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="review-text">Your Review</label>
+            <textarea id="review-text" name="review" rows="5" required 
+              placeholder="Share your experience working with Neon Kenya. What made it special?"></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Submit Review</button>
+            <p class="form-disclaimer">
+              <small>Reviews are moderated and will be published after verification.</small>
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass" role="contentinfo">
+    <div class="footer-content">
+      <p>© <span id="year"></span> Neon Kenya — Fashion Designer & Model</p>
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="/review-policy.html">Review Policy</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script type="module" src="src/js/main.js"></script>
+  <script>
+    // Testimonials functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      // Category filtering
+      const filterTabs = document.querySelectorAll('.filter-tab');
+      const testimonials = document.querySelectorAll('.testimonial-card');
+      
+      filterTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          filterTabs.forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+          
+          const category = this.dataset.category;
+          testimonials.forEach(testimonial => {
+            if (category === 'all' || testimonial.dataset.category === category) {
+              testimonial.style.display = 'block';
+            } else {
+              testimonial.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Star rating functionality
+      const starBtns = document.querySelectorAll('.star-btn');
+      let selectedRating = 0;
+      
+      starBtns.forEach((btn, index) => {
+        btn.addEventListener('click', function() {
+          selectedRating = parseInt(this.dataset.rating);
+          
+          // Update visual state
+          starBtns.forEach((star, starIndex) => {
+            if (starIndex < selectedRating) {
+              star.classList.add('active');
+            } else {
+              star.classList.remove('active');
+            }
+          });
+        });
+        
+        // Hover effects
+        btn.addEventListener('mouseenter', function() {
+          const hoverRating = parseInt(this.dataset.rating);
+          starBtns.forEach((star, starIndex) => {
+            if (starIndex < hoverRating) {
+              star.classList.add('hover');
+            } else {
+              star.classList.remove('hover');
+            }
+          });
+        });
+      });
+
+      // Remove hover effects when leaving rating area
+      document.getElementById('rating-input').addEventListener('mouseleave', function() {
+        starBtns.forEach(star => star.classList.remove('hover'));
+      });
+
+      // Form submission
+      document.querySelector('.review-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        if (selectedRating === 0) {
+          alert('Please select a rating');
+          return;
+        }
+        
+        // Here you would typically send the data to your server
+        alert('Thank you for your review! It will be published after moderation.');
+        this.reset();
+        selectedRating = 0;
+        starBtns.forEach(star => star.classList.remove('active'));
+      });
+    });
+  </script>
+</body>
+</html>

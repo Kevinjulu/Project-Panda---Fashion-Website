@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fashion Blog — Neon Kenya</title>
+  <meta name="description" content="Stay updated with the latest in Kenyan fashion, styling tips, cultural insights, and behind-the-scenes stories from Neon Kenya's design journey." />
+  <meta name="keywords" content="fashion blog Kenya, African fashion trends, styling tips, Kenyan designers, fashion week updates, cultural fashion" />
+  <link rel="canonical" href="https://neonkenya.com/blog" />
+  <meta property="og:title" content="Fashion Blog — Neon Kenya" />
+  <meta property="og:description" content="Latest in Kenyan fashion, styling tips, and cultural insights from professional designer and model." />
+  <meta property="og:type" content="blog" />
+  <meta property="og:url" content="https://neonkenya.com/blog" />
+  <meta property="og:image" content="/public/images/og-blog.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Manrope:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/public/images/favicon.svg" />
+  <link rel="stylesheet" href="src/css/styles.css" />
+  <link rel="stylesheet" href="src/css/components.css" />
+  <link rel="stylesheet" href="src/css/animations.css" />
+</head>
+<body>
+  <canvas id="particles" class="particles"></canvas>
+  <header class="navbar glass" role="banner">
+    <div class="nav-left">
+      <a href="/" class="brand">
+        <img src="public/images/logo.svg" alt="Neon Kenya logo" class="logo" />
+        <span class="brand-name">NEON KENYA</span>
+      </a>
+    </div>
+    <nav class="nav-center" role="navigation" aria-label="Main navigation">
+      <a href="/" class="nav-link">Home</a>
+      <a href="/about.html" class="nav-link">About</a>
+      <a href="/collections.html" class="nav-link">Collections</a>
+      <a href="/blog.html" class="nav-link active">Blog</a>
+      <a href="/src/contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="btn btn-secondary">Subscribe</button>
+      <a class="btn btn-accent" href="/services.html">Book Services</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Blog Hero Section -->
+    <section class="section reveal blog-hero" aria-label="Blog introduction">
+      <div class="blog-hero-content">
+        <h1 class="section-title">Fashion Blog</h1>
+        <p class="section-subtitle">
+          Discover the latest in Kenyan fashion, cultural insights, styling tips, and behind-the-scenes stories 
+          from the world of African-inspired design.
+        </p>
+        <div class="blog-stats">
+          <div class="stat-item">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Articles</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">10K+</span>
+            <span class="stat-label">Readers</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">Weekly</span>
+            <span class="stat-label">Updates</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="section reveal featured-article" aria-label="Featured article">
+      <div class="featured-content">
+        <div class="featured-text">
+          <div class="article-meta">
+            <span class="category featured-category">Featured</span>
+            <time datetime="2024-09-20">September 20, 2024</time>
+          </div>
+          <h2>The Renaissance of African Fashion: Kenya Leading the Way</h2>
+          <p class="article-excerpt">
+            Nairobi Fashion Week 2024 showcased unprecedented creativity and cultural pride. 
+            From traditional Maasai-inspired couture to contemporary streetwear celebrating matatu culture, 
+            Kenyan designers are redefining global fashion narratives.
+          </p>
+          <div class="article-tags">
+            <span class="tag">Fashion Week</span>
+            <span class="tag">African Fashion</span>
+            <span class="tag">Cultural Heritage</span>
+          </div>
+          <a href="#" class="btn btn-primary">Read Full Article</a>
+        </div>
+        <div class="featured-image">
+          <img src="public/images/gallery-1.svg" alt="Nairobi Fashion Week 2024 highlights" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Categories Filter -->
+    <section class="section reveal blog-filters" aria-label="Article categories">
+      <h2 class="section-title">Explore Topics</h2>
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-category="all">All Articles</button>
+        <button class="filter-tab" data-category="trends">Fashion Trends</button>
+        <button class="filter-tab" data-category="culture">Cultural Heritage</button>
+        <button class="filter-tab" data-category="styling">Styling Tips</button>
+        <button class="filter-tab" data-category="behind-scenes">Behind the Scenes</button>
+        <button class="filter-tab" data-category="industry">Industry News</button>
+      </div>
+    </section>
+
+    <!-- Blog Articles Grid -->
+    <section class="section reveal blog-grid" aria-label="Blog articles">
+      <div class="articles-grid" id="articles-grid">
+        
+        <!-- Article 1 -->
+        <article class="article-card glass" data-category="styling">
+          <div class="article-image">
+            <img src="public/images/gallery-2.svg" alt="Color theory for African skin tones" />
+            <div class="article-overlay">
+              <span class="category">Styling Tips</span>
+            </div>
+          </div>
+          <div class="article-content">
+            <div class="article-meta">
+              <time datetime="2024-09-18">September 18, 2024</time>
+              <span class="read-time">5 min read</span>
+            </div>
+            <h3>Color Theory for African Skin Tones: A Designer's Guide</h3>
+            <p>Discover how to choose colors that complement and celebrate the beauty of African skin tones...</p>
+            <div class="article-footer">
+              <div class="article-tags">
+                <span class="tag">Color Theory</span>
+                <span class="tag">Styling</span>
+              </div>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article-card glass" data-category="culture">
+          <div class="article-image">
+            <img src="public/images/gallery-3.svg" alt="Traditional Kenyan textiles modern interpretation" />
+            <div class="article-overlay">
+              <span class="category">Cultural Heritage</span>
+            </div>
+          </div>
+          <div class="article-content">
+            <div class="article-meta">
+              <time datetime="2024-09-15">September 15, 2024</time>
+              <span class="read-time">8 min read</span>
+            </div>
+            <h3>From Kanga to Runway: Traditional Textiles in Modern Fashion</h3>
+            <p>Exploring how traditional Kenyan textiles are being reimagined for contemporary fashion...</p>
+            <div class="article-footer">
+              <div class="article-tags">
+                <span class="tag">Textiles</span>
+                <span class="tag">Tradition</span>
+              </div>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article-card glass" data-category="behind-scenes">
+          <div class="article-image">
+            <img src="public/images/hero.svg" alt="Behind the scenes of collection creation" />
+            <div class="article-overlay">
+              <span class="category">Behind the Scenes</span>
+            </div>
+          </div>
+          <div class="article-content">
+            <div class="article-meta">
+              <time datetime="2024-09-12">September 12, 2024</time>
+              <span class="read-time">6 min read</span>
+            </div>
+            <h3>Creating the 'Neon Nights' Collection: A Designer's Journey</h3>
+            <p>Take an exclusive look behind the scenes of how our latest collection came to life...</p>
+            <div class="article-footer">
+              <div class="article-tags">
+                <span class="tag">Process</span>
+                <span class="tag">Collection</span>
+              </div>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="article-card glass" data-category="trends">
+          <div class="article-image">
+            <img src="public/images/gallery-1.svg" alt="African fashion trends 2024" />
+            <div class="article-overlay">
+              <span class="category">Fashion Trends</span>
+            </div>
+          </div>
+          <div class="article-content">
+            <div class="article-meta">
+              <time datetime="2024-09-10">September 10, 2024</time>
+              <span class="read-time">7 min read</span>
+            </div>
+            <h3>5 African Fashion Trends Taking the World by Storm</h3>
+            <p>From Afrofuturism to sustainable practices, discover the trends shaping global fashion...</p>
+            <div class="article-footer">
+              <div class="article-tags">
+                <span class="tag">Trends</span>
+                <span class="tag">Global Fashion</span>
+              </div>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="article-card glass" data-category="industry">
+          <div class="article-image">
+            <img src="public/images/gallery-2.svg" alt="Kenyan fashion industry growth" />
+            <div class="article-overlay">
+              <span class="category">Industry News</span>
+            </div>
+          </div>
+          <div class="article-content">
+            <div class="article-meta">
+              <time datetime="2024-09-08">September 8, 2024</time>
+              <span class="read-time">4 min read</span>
+            </div>
+            <h3>Kenya's Fashion Industry: Economic Impact and Growth</h3>
+            <p>Analyzing the economic contribution of Kenya's growing fashion sector...</p>
+            <div class="article-footer">
+              <div class="article-tags">
+                <span class="tag">Economics</span>
+                <span class="tag">Industry</span>
+              </div>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="article-card glass" data-category="styling">
+          <div class="article-image">
+            <img src="public/images/gallery-3.svg" alt="Dressing for Kenyan weather" />
+            <div class="article-overlay">
+              <span class="category">Styling Tips</span>
+            </div>
+          </div>
+          <div class="article-content">
+            <div class="article-meta">
+              <time datetime="2024-09-05">September 5, 2024</time>
+              <span class="read-time">6 min read</span>
+            </div>
+            <h3>Dressing for Kenya's Climate: Style Meets Practicality</h3>
+            <p>Master the art of looking stylish while staying comfortable in Kenya's diverse climate...</p>
+            <div class="article-footer">
+              <div class="article-tags">
+                <span class="tag">Climate</span>
+                <span class="tag">Practical Style</span>
+              </div>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="section reveal newsletter-section" aria-label="Newsletter signup">
+      <div class="newsletter-content glass">
+        <div class="newsletter-text">
+          <h2>Stay Updated with Fashion Insights</h2>
+          <p>Get weekly updates on Kenyan fashion trends, styling tips, and exclusive behind-the-scenes content delivered to your inbox.</p>
+        </div>
+        <form class="newsletter-form" aria-label="Newsletter subscription">
+          <div class="form-group">
+            <input type="email" placeholder="Enter your email address" required aria-label="Email address" />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+          <p class="newsletter-disclaimer">
+            <small>Join 2,500+ fashion enthusiasts. Unsubscribe anytime. Privacy policy protected.</small>
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Blog Navigation -->
+    <section class="section reveal blog-navigation" aria-label="Blog navigation">
+      <div class="pagination">
+        <button class="pagination-btn" disabled>← Previous</button>
+        <div class="page-numbers">
+          <span class="page-number active">1</span>
+          <span class="page-number">2</span>
+          <span class="page-number">3</span>
+          <span class="page-dots">...</span>
+          <span class="page-number">8</span>
+        </div>
+        <button class="pagination-btn">Next →</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass" role="contentinfo">
+    <div class="footer-content">
+      <p>© <span id="year"></span> Neon Kenya — Fashion Designer & Model</p>
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script type="module" src="src/js/main.js"></script>
+  <script>
+    // Blog filtering functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterTabs = document.querySelectorAll('.filter-tab');
+      const articles = document.querySelectorAll('.article-card');
+      
+      filterTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          // Update active tab
+          filterTabs.forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+          
+          // Filter articles
+          const category = this.dataset.category;
+          articles.forEach(article => {
+            if (category === 'all' || article.dataset.category === category) {
+              article.style.display = 'block';
+            } else {
+              article.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

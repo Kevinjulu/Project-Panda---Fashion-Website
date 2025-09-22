@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Runway Shows — Neon Kenya</title>
+  <meta name="description" content="Experience Neon Kenya's runway shows and fashion week participation. Watch videos, view photos, and discover behind-the-scenes moments from major fashion events." />
+  <meta name="keywords" content="Nairobi Fashion Week, Kenya runway shows, fashion week modeling, African fashion shows, runway videos, fashion events Kenya" />
+  <link rel="canonical" href="https://neonkenya.com/runway" />
+  <meta property="og:title" content="Runway Shows — Neon Kenya" />
+  <meta property="og:description" content="Professional runway shows and fashion week participation showcasing African-inspired designs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://neonkenya.com/runway" />
+  <meta property="og:image" content="/public/images/og-runway.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Manrope:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/public/images/favicon.svg" />
+  <link rel="stylesheet" href="src/css/styles.css" />
+  <link rel="stylesheet" href="src/css/components.css" />
+  <link rel="stylesheet" href="src/css/animations.css" />
+</head>
+<body>
+  <canvas id="particles" class="particles"></canvas>
+  <header class="navbar glass" role="banner">
+    <div class="nav-left">
+      <a href="/" class="brand">
+        <img src="public/images/logo.svg" alt="Neon Kenya logo" class="logo" />
+        <span class="brand-name">NEON KENYA</span>
+      </a>
+    </div>
+    <nav class="nav-center" role="navigation" aria-label="Main navigation">
+      <a href="/" class="nav-link">Home</a>
+      <a href="/collections.html" class="nav-link">Collections</a>
+      <a href="/runway.html" class="nav-link active">Runway</a>
+      <a href="/blog.html" class="nav-link">Blog</a>
+      <a href="/src/contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="btn btn-secondary">Watch Videos</button>
+      <a class="btn btn-accent" href="/services.html">Book Modeling</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Runway Hero Section -->
+    <section class="section reveal runway-hero" aria-label="Runway introduction">
+      <div class="runway-hero-content">
+        <h1 class="section-title">Runway Shows</h1>
+        <p class="section-subtitle">
+          Step into the world of high fashion with exclusive runway shows and fashion week participation. 
+          Witness the fusion of Kenyan culture and contemporary design on prestigious catwalks.
+        </p>
+        <div class="runway-achievements">
+          <div class="achievement-item">
+            <span class="achievement-number">15+</span>
+            <span class="achievement-label">Fashion Shows</span>
+          </div>
+          <div class="achievement-item">
+            <span class="achievement-number">5</span>
+            <span class="achievement-label">Fashion Weeks</span>
+          </div>
+          <div class="achievement-item">
+            <span class="achievement-number">3</span>
+            <span class="achievement-label">International Shows</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Runway Show -->
+    <section class="section reveal featured-show" aria-label="Featured runway show">
+      <div class="featured-show-content">
+        <div class="show-video">
+          <div class="video-placeholder">
+            <div class="play-button">▶</div>
+            <img src="public/images/gallery-1.svg" alt="Nairobi Fashion Week 2024 - Neon Nights Collection" />
+            <div class="video-overlay">
+              <div class="video-duration">3:24</div>
+              <div class="video-quality">HD</div>
+            </div>
+          </div>
+        </div>
+        <div class="show-details">
+          <div class="show-meta">
+            <span class="show-badge featured">Featured Show</span>
+            <time datetime="2024-09-15">September 15, 2024</time>
+          </div>
+          <h2>Nairobi Fashion Week 2024</h2>
+          <h3>Neon Nights Collection Debut</h3>
+          <p class="show-description">
+            The highly anticipated debut of the Neon Nights collection at Nairobi Fashion Week 2024. 
+            This 15-piece collection celebrates the electric energy of Kenya's nightlife while honoring 
+            traditional Maasai patterns and craftsmanship.
+          </p>
+          <div class="show-stats">
+            <div class="stat-item">
+              <strong>500+</strong> Audience
+            </div>
+            <div class="stat-item">
+              <strong>15</strong> Runway Looks
+            </div>
+            <div class="stat-item">
+              <strong>8</strong> Media Outlets
+            </div>
+          </div>
+          <div class="show-actions">
+            <button class="btn btn-primary watch-full-btn">Watch Full Show</button>
+            <a href="/collections.html" class="btn btn-secondary">View Collection</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Runway Categories -->
+    <section class="section reveal runway-filters" aria-label="Runway categories">
+      <h2 class="section-title">Fashion Events</h2>
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-category="all">All Shows</button>
+        <button class="filter-tab" data-category="fashion-weeks">Fashion Weeks</button>
+        <button class="filter-tab" data-category="designer-shows">Designer Shows</button>
+        <button class="filter-tab" data-category="charity-events">Charity Events</button>
+        <button class="filter-tab" data-category="international">International</button>
+      </div>
+    </section>
+
+    <!-- Runway Shows Grid -->
+    <section class="section reveal runway-grid" aria-label="Runway shows">
+      <div class="shows-grid" id="shows-grid">
+        
+        <!-- Show 1: Fashion Week -->
+        <article class="show-card glass" data-category="fashion-weeks">
+          <div class="show-image">
+            <img src="public/images/gallery-2.svg" alt="Kenya Fashion Awards 2024" />
+            <div class="show-overlay">
+              <button class="play-btn">▶</button>
+              <div class="show-duration">2:15</div>
+            </div>
+            <span class="show-badge award">Award Show</span>
+          </div>
+          <div class="show-content">
+            <div class="show-meta">
+              <time datetime="2024-08-20">August 20, 2024</time>
+              <span class="show-location">KICC, Nairobi</span>
+            </div>
+            <h3>Kenya Fashion Awards 2024</h3>
+            <p class="show-excerpt">Showcasing the Coastal Hues collection at Kenya's premier fashion awards ceremony.</p>
+            <div class="show-details">
+              <span class="detail-item">🏆 Best Collection Nominee</span>
+              <span class="detail-item">📺 Live Broadcast</span>
+            </div>
+            <div class="show-actions">
+              <button class="btn btn-outline watch-btn" data-video="kenya-fashion-awards-2024">Watch Highlights</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Show 2: Designer Show -->
+        <article class="show-card glass" data-category="designer-shows">
+          <div class="show-image">
+            <img src="public/images/gallery-3.svg" alt="Matatu Culture Fashion Show" />
+            <div class="show-overlay">
+              <button class="play-btn">▶</button>
+              <div class="show-duration">4:12</div>
+            </div>
+            <span class="show-badge cultural">Cultural</span>
+          </div>
+          <div class="show-content">
+            <div class="show-meta">
+              <time datetime="2024-07-12">July 12, 2024</time>
+              <span class="show-location">Nairobi National Museum</span>
+            </div>
+            <h3>Matatu Culture Fashion Show</h3>
+            <p class="show-excerpt">Celebrating Nairobi's vibrant matatu culture through fashion with the Matatu Vibes collection.</p>
+            <div class="show-details">
+              <span class="detail-item">🎨 Cultural Celebration</span>
+              <span class="detail-item">👥 200+ Attendees</span>
+            </div>
+            <div class="show-actions">
+              <button class="btn btn-outline watch-btn" data-video="matatu-culture-show">Watch Full Show</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Show 3: Charity Event -->
+        <article class="show-card glass" data-category="charity-events">
+          <div class="show-image">
+            <img src="public/images/hero.svg" alt="Fashion for Change Charity Gala" />
+            <div class="show-overlay">
+              <button class="play-btn">▶</button>
+              <div class="show-duration">1:45</div>
+            </div>
+            <span class="show-badge charity">Charity</span>
+          </div>
+          <div class="show-content">
+            <div class="show-meta">
+              <time datetime="2024-06-05">June 5, 2024</time>
+              <span class="show-location">Serena Hotel, Nairobi</span>
+            </div>
+            <h3>Fashion for Change Charity Gala</h3>
+            <p class="show-excerpt">Modeling for children's education charity while showcasing sustainable fashion pieces.</p>
+            <div class="show-details">
+              <span class="detail-item">💝 KES 2M Raised</span>
+              <span class="detail-item">🌱 Sustainable Focus</span>
+            </div>
+            <div class="show-actions">
+              <button class="btn btn-outline watch-btn" data-video="fashion-for-change">Watch Moments</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Show 4: International -->
+        <article class="show-card glass" data-category="international">
+          <div class="show-image">
+            <img src="public/images/gallery-1.svg" alt="Lagos Fashion Week 2024" />
+            <div class="show-overlay">
+              <button class="play-btn">▶</button>
+              <div class="show-duration">3:30</div>
+            </div>
+            <span class="show-badge international">International</span>
+          </div>
+          <div class="show-content">
+            <div class="show-meta">
+              <time datetime="2024-05-18">May 18, 2024</time>
+              <span class="show-location">Lagos, Nigeria</span>
+            </div>
+            <h3>Lagos Fashion Week 2024</h3>
+            <p class="show-excerpt">International debut representing Kenyan fashion at West Africa's premier fashion week.</p>
+            <div class="show-details">
+              <span class="detail-item">🌍 International Debut</span>
+              <span class="detail-item">📸 Global Press Coverage</span>
+            </div>
+            <div class="show-actions">
+              <button class="btn btn-outline watch-btn" data-video="lagos-fashion-week">Watch Highlights</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Show 5: Fashion Week -->
+        <article class="show-card glass" data-category="fashion-weeks">
+          <div class="show-image">
+            <img src="public/images/gallery-2.svg" alt="Swahili Fashion Week 2023" />
+            <div class="show-overlay">
+              <button class="play-btn">▶</button>
+              <div class="show-duration">2:55</div>
+            </div>
+            <span class="show-badge collaboration">Collaboration</span>
+          </div>
+          <div class="show-content">
+            <div class="show-meta">
+              <time datetime="2023-12-08">December 8, 2023</time>
+              <span class="show-location">Dar es Salaam, Tanzania</span>
+            </div>
+            <h3>Swahili Fashion Week 2023</h3>
+            <p class="show-excerpt">Collaborative show featuring East African designers, showcasing the Emerald Lines collection.</p>
+            <div class="show-details">
+              <span class="detail-item">🤝 Designer Collaboration</span>
+              <span class="detail-item">🎭 Cultural Exchange</span>
+            </div>
+            <div class="show-actions">
+              <button class="btn btn-outline watch-btn" data-video="swahili-fashion-week">Watch Performance</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Show 6: Designer Show -->
+        <article class="show-card glass" data-category="designer-shows">
+          <div class="show-image">
+            <img src="public/images/gallery-3.svg" alt="Heritage Fashion Showcase" />
+            <div class="show-overlay">
+              <button class="play-btn">▶</button>
+              <div class="show-duration">3:08</div>
+            </div>
+            <span class="show-badge heritage">Heritage</span>
+          </div>
+          <div class="show-content">
+            <div class="show-meta">
+              <time datetime="2023-11-15">November 15, 2023</time>
+              <span class="show-location">Kenya Cultural Centre</span>
+            </div>
+            <h3>Heritage Fashion Showcase</h3>
+            <p class="show-excerpt">Solo exhibition celebrating traditional Kenyan textiles and modern interpretations.</p>
+            <div class="show-details">
+              <span class="detail-item">🏛️ Cultural Exhibition</span>
+              <span class="detail-item">📚 Educational Component</span>
+            </div>
+            <div class="show-actions">
+              <button class="btn btn-outline watch-btn" data-video="heritage-showcase">Watch Exhibition</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Behind the Scenes -->
+    <section class="section reveal behind-scenes" aria-label="Behind the scenes">
+      <h2 class="section-title">Behind the Runway</h2>
+      <div class="bts-grid">
+        
+        <div class="bts-card glass">
+          <div class="bts-image">
+            <img src="public/images/gallery-1.svg" alt="Backstage preparation for runway show" />
+          </div>
+          <div class="bts-content">
+            <h3>Backstage Preparations</h3>
+            <p>Get an exclusive look at the intense preparation that goes into every runway show, from final fittings to makeup touch-ups.</p>
+            <div class="bts-stats">
+              <span>⏰ 4 hours prep time</span>
+              <span>👥 12 team members</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bts-card glass">
+          <div class="bts-image">
+            <img src="public/images/gallery-2.svg" alt="Rehearsal and choreography" />
+          </div>
+          <div class="bts-content">
+            <h3>Choreography & Rehearsals</h3>
+            <p>Every step is meticulously planned. See how runway choreography brings collections to life and tells each design's story.</p>
+            <div class="bts-stats">
+              <span>💃 3 rehearsal sessions</span>
+              <span>⭐ Perfect synchronization</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bts-card glass">
+          <div class="bts-image">
+            <img src="public/images/gallery-3.svg" alt="Designer collaboration and fitting" />
+          </div>
+          <div class="bts-content">
+            <h3>Designer Collaborations</h3>
+            <p>Discover the creative process of working with various designers and how each collaboration brings unique perspectives to the runway.</p>
+            <div class="bts-stats">
+              <span>🎨 8 designer partnerships</span>
+              <span>✨ Unique visions realized</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Press Coverage -->
+    <section class="section reveal press-coverage" aria-label="Press coverage">
+      <h2 class="section-title">Media Coverage</h2>
+      <div class="press-grid">
+        
+        <div class="press-item glass">
+          <div class="press-logo">
+            <span class="media-icon">📺</span>
+          </div>
+          <div class="press-content">
+            <h3>"Rising Star of Kenyan Fashion"</h3>
+            <p class="press-outlet">Kenya Television Network</p>
+            <p class="press-date">September 2024</p>
+            <blockquote>"Neon Kenya's runway presence is captivating and her designs tell authentic stories of Kenyan culture."</blockquote>
+          </div>
+        </div>
+
+        <div class="press-item glass">
+          <div class="press-logo">
+            <span class="media-icon">📰</span>
+          </div>
+          <div class="press-content">
+            <h3>"Fashion Week Standout"</h3>
+            <p class="press-outlet">Daily Nation Fashion</p>
+            <p class="press-date">August 2024</p>
+            <blockquote>"The Neon Nights collection was undoubtedly one of the most talked-about shows at Nairobi Fashion Week."</blockquote>
+          </div>
+        </div>
+
+        <div class="press-item glass">
+          <div class="press-logo">
+            <span class="media-icon">📱</span>
+          </div>
+          <div class="press-content">
+            <h3>"Cultural Fashion Pioneer"</h3>
+            <p class="press-outlet">African Fashion Magazine</p>
+            <p class="press-date">July 2024</p>
+            <blockquote>"Neon Kenya represents the future of African fashion—authentic, innovative, and globally relevant."</blockquote>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Upcoming Shows -->
+    <section class="section reveal upcoming-shows" aria-label="Upcoming shows">
+      <div class="upcoming-content glass">
+        <div class="upcoming-text">
+          <h2>Upcoming Runway Shows</h2>
+          <p>Don't miss the latest fashion events and runway shows. Get exclusive access to upcoming collections and behind-the-scenes content.</p>
+          <div class="next-show">
+            <div class="show-preview">
+              <div class="preview-date">
+                <span class="month">DEC</span>
+                <span class="day">15</span>
+              </div>
+              <div class="preview-info">
+                <h3>East Africa Fashion Summit 2024</h3>
+                <p>Kampala, Uganda • Debut of Safari Dreams Collection</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="upcoming-actions">
+          <a href="/blog.html" class="btn btn-primary">Get Updates</a>
+          <a href="/services.html" class="btn btn-secondary">Book for Events</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Video Modal (Hidden by default) -->
+  <div class="video-modal" id="video-modal" aria-label="Video player">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="close-modal">×</button>
+      <div class="video-container">
+        <div class="video-placeholder-modal">
+          <div class="loading-spinner">Loading...</div>
+          <p>Video player would be embedded here</p>
+        </div>
+      </div>
+      <div class="video-info">
+        <h3 id="modal-video-title">Video Title</h3>
+        <p id="modal-video-description">Video description would appear here.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer glass" role="contentinfo">
+    <div class="footer-content">
+      <p>© <span id="year"></span> Neon Kenya — Fashion Designer & Model</p>
+      <div class="footer-links">
+        <a href="/media-kit.html">Media Kit</a>
+        <a href="/press.html">Press Inquiries</a>
+        <a href="/events.html">Upcoming Events</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script type="module" src="src/js/main.js"></script>
+  <script>
+    // Runway shows functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      // Category filtering
+      const filterTabs = document.querySelectorAll('.filter-tab');
+      const shows = document.querySelectorAll('.show-card');
+      
+      filterTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          filterTabs.forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+          
+          const category = this.dataset.category;
+          shows.forEach(show => {
+            if (category === 'all' || show.dataset.category === category) {
+              show.style.display = 'block';
+            } else {
+              show.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Video modal functionality
+      const videoModal = document.getElementById('video-modal');
+      const watchBtns = document.querySelectorAll('.watch-btn, .watch-full-btn');
+      const closeModal = document.querySelector('.close-modal');
+      const modalBackdrop = document.querySelector('.modal-backdrop');
+
+      // Open video modal
+      watchBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const videoId = this.dataset.video || 'default';
+          const showCard = this.closest('.show-card') || this.closest('.featured-show-content');
+          
+          // Update modal content
+          const title = showCard.querySelector('h3, h2').textContent;
+          const description = showCard.querySelector('.show-description, .show-excerpt').textContent;
+          
+          document.getElementById('modal-video-title').textContent = title;
+          document.getElementById('modal-video-description').textContent = description;
+          
+          // Show modal
+          videoModal.classList.add('open');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      // Close modal
+      function closeVideoModal() {
+        videoModal.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      closeModal.addEventListener('click', closeVideoModal);
+      modalBackdrop.addEventListener('click', closeVideoModal);
+
+      // Close modal with Escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && videoModal.classList.contains('open')) {
+          closeVideoModal();
+        }
+      });
+
+      // Play button functionality for video previews
+      const playBtns = document.querySelectorAll('.play-btn, .play-button');
+      playBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          // This would trigger video playback
+          console.log('Playing video...');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

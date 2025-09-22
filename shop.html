@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop Fashion — Neon Kenya</title>
+  <meta name="description" content="Shop exclusive Neon Kenya fashion collections. Ready-to-wear pieces, handcrafted accessories, and digital fashion illustrations celebrating African heritage." />
+  <meta name="keywords" content="buy African fashion, Kenya designer clothing, handcrafted accessories, digital fashion art, sustainable fashion shop" />
+  <link rel="canonical" href="https://neonkenya.com/shop" />
+  <meta property="og:title" content="Shop Fashion — Neon Kenya" />
+  <meta property="og:description" content="Exclusive fashion pieces and accessories celebrating African heritage and Kenyan culture." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://neonkenya.com/shop" />
+  <meta property="og:image" content="/public/images/og-shop.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Manrope:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/public/images/favicon.svg" />
+  <link rel="stylesheet" href="src/css/styles.css" />
+  <link rel="stylesheet" href="src/css/components.css" />
+  <link rel="stylesheet" href="src/css/animations.css" />
+</head>
+<body>
+  <canvas id="particles" class="particles"></canvas>
+  <header class="navbar glass" role="banner">
+    <div class="nav-left">
+      <a href="/" class="brand">
+        <img src="public/images/logo.svg" alt="Neon Kenya logo" class="logo" />
+        <span class="brand-name">NEON KENYA</span>
+      </a>
+    </div>
+    <nav class="nav-center" role="navigation" aria-label="Main navigation">
+      <a href="/" class="nav-link">Home</a>
+      <a href="/collections.html" class="nav-link">Collections</a>
+      <a href="/shop.html" class="nav-link active">Shop</a>
+      <a href="/blog.html" class="nav-link">Blog</a>
+      <a href="/src/contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="btn btn-secondary cart-btn">
+        <span class="cart-icon">🛍️</span>
+        <span class="cart-count">0</span>
+      </button>
+      <a class="btn btn-accent" href="/services.html">Custom Order</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Shop Hero Section -->
+    <section class="section reveal shop-hero" aria-label="Shop introduction">
+      <div class="shop-hero-content">
+        <h1 class="section-title">Fashion Shop</h1>
+        <p class="section-subtitle">
+          Discover exclusive pieces that celebrate African heritage and Kenyan craftsmanship. 
+          Each item tells a story of culture, sustainability, and timeless elegance.
+        </p>
+        <div class="shop-features">
+          <div class="feature-item">
+            <span class="feature-icon">🌍</span>
+            <span>Ethically Made</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">✈️</span>
+            <span>Global Shipping</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">💫</span>
+            <span>Limited Edition</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="section reveal category-filters" aria-label="Product categories">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="category-tabs">
+        <button class="category-tab active" data-category="all">All Products</button>
+        <button class="category-tab" data-category="ready-to-wear">Ready-to-Wear</button>
+        <button class="category-tab" data-category="accessories">Accessories</button>
+        <button class="category-tab" data-category="digital">Digital Art</button>
+        <button class="category-tab" data-category="gift-cards">Gift Cards</button>
+      </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="section reveal products-section" aria-label="Products">
+      <div class="products-grid" id="products-grid">
+        
+        <!-- Product 1: Ready-to-Wear -->
+        <article class="product-card glass" data-category="ready-to-wear">
+          <div class="product-image">
+            <img src="public/images/gallery-1.svg" alt="Neon Nights Evening Dress" />
+            <div class="product-overlay">
+              <button class="quick-view-btn">Quick View</button>
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <span class="product-badge new">New</span>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Ready-to-Wear</div>
+            <h3 class="product-title">Neon Nights Evening Dress</h3>
+            <p class="product-description">Electric silhouette with traditional Maasai-inspired beadwork details.</p>
+            <div class="product-details">
+              <div class="product-price">
+                <span class="current-price">KES 45,000</span>
+                <span class="original-price">KES 52,000</span>
+              </div>
+              <div class="product-sizes">
+                <span class="size-label">Sizes:</span>
+                <div class="sizes">
+                  <button class="size-btn">S</button>
+                  <button class="size-btn">M</button>
+                  <button class="size-btn sold-out" disabled>L</button>
+                  <button class="size-btn">XL</button>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary add-to-cart" data-product-id="1">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Product 2: Accessories -->
+        <article class="product-card glass" data-category="accessories">
+          <div class="product-image">
+            <img src="public/images/gallery-2.svg" alt="Coastal Hues Statement Necklace" />
+            <div class="product-overlay">
+              <button class="quick-view-btn">Quick View</button>
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <span class="product-badge handcrafted">Handcrafted</span>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Accessories</div>
+            <h3 class="product-title">Coastal Hues Statement Necklace</h3>
+            <p class="product-description">Ocean-inspired beadwork created by local Kenyan artisans.</p>
+            <div class="product-details">
+              <div class="product-price">
+                <span class="current-price">KES 8,500</span>
+              </div>
+              <div class="product-colors">
+                <span class="color-label">Colors:</span>
+                <div class="colors">
+                  <button class="color-btn" style="background: #4A90E2;" title="Ocean Blue"></button>
+                  <button class="color-btn" style="background: #FF7B7B;" title="Coral Pink"></button>
+                  <button class="color-btn" style="background: #50E3C2;" title="Turquoise"></button>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary add-to-cart" data-product-id="2">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Product 3: Ready-to-Wear -->
+        <article class="product-card glass" data-category="ready-to-wear">
+          <div class="product-image">
+            <img src="public/images/gallery-3.svg" alt="Matatu Vibes Streetwear Set" />
+            <div class="product-overlay">
+              <button class="quick-view-btn">Quick View</button>
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <span class="product-badge limited">Limited Edition</span>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Ready-to-Wear</div>
+            <h3 class="product-title">Matatu Vibes Streetwear Set</h3>
+            <p class="product-description">Urban-inspired two-piece celebrating Nairobi's vibrant street culture.</p>
+            <div class="product-details">
+              <div class="product-price">
+                <span class="current-price">KES 28,000</span>
+              </div>
+              <div class="product-sizes">
+                <span class="size-label">Sizes:</span>
+                <div class="sizes">
+                  <button class="size-btn">XS</button>
+                  <button class="size-btn">S</button>
+                  <button class="size-btn">M</button>
+                  <button class="size-btn">L</button>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary add-to-cart" data-product-id="3">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Product 4: Digital Art -->
+        <article class="product-card glass" data-category="digital">
+          <div class="product-image">
+            <img src="public/images/hero.svg" alt="Fashion Illustration Collection" />
+            <div class="product-overlay">
+              <button class="quick-view-btn">Quick View</button>
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <span class="product-badge digital">Digital</span>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Digital Art</div>
+            <h3 class="product-title">Fashion Illustration Collection</h3>
+            <p class="product-description">High-resolution fashion sketches and design concepts (10 illustrations).</p>
+            <div class="product-details">
+              <div class="product-price">
+                <span class="current-price">KES 3,500</span>
+              </div>
+              <div class="product-format">
+                <span class="format-label">Format:</span>
+                <span class="format-info">Digital Download (PNG, PDF)</span>
+              </div>
+            </div>
+            <button class="btn btn-primary add-to-cart" data-product-id="4">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Product 5: Accessories -->
+        <article class="product-card glass" data-category="accessories">
+          <div class="product-image">
+            <img src="public/images/gallery-1.svg" alt="Emerald Lines Handbag" />
+            <div class="product-overlay">
+              <button class="quick-view-btn">Quick View</button>
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <span class="product-badge sustainable">Sustainable</span>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Accessories</div>
+            <h3 class="product-title">Emerald Lines Handbag</h3>
+            <p class="product-description">Luxury handbag crafted from sustainable materials with emerald-inspired details.</p>
+            <div class="product-details">
+              <div class="product-price">
+                <span class="current-price">KES 18,000</span>
+              </div>
+              <div class="product-materials">
+                <span class="materials-label">Material:</span>
+                <span class="materials-info">Sustainable Leather, Recycled Hardware</span>
+              </div>
+            </div>
+            <button class="btn btn-primary add-to-cart" data-product-id="5">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Product 6: Gift Cards -->
+        <article class="product-card glass" data-category="gift-cards">
+          <div class="product-image gift-card-image">
+            <div class="gift-card-design">
+              <div class="gift-card-logo">NEON KENYA</div>
+              <div class="gift-card-text">Fashion Gift Card</div>
+              <div class="gift-card-pattern"></div>
+            </div>
+            <div class="product-overlay">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Gift Cards</div>
+            <h3 class="product-title">Fashion Gift Card</h3>
+            <p class="product-description">Perfect gift for fashion lovers. Valid for all services and products.</p>
+            <div class="product-details">
+              <div class="gift-card-amounts">
+                <button class="amount-btn" data-amount="5000">KES 5,000</button>
+                <button class="amount-btn active" data-amount="10000">KES 10,000</button>
+                <button class="amount-btn" data-amount="25000">KES 25,000</button>
+                <button class="amount-btn" data-amount="50000">KES 50,000</button>
+              </div>
+            </div>
+            <button class="btn btn-primary add-to-cart" data-product-id="6">Purchase Gift Card</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Shopping Benefits -->
+    <section class="section reveal shopping-benefits" aria-label="Shopping benefits">
+      <h2 class="section-title">Why Shop with Neon Kenya</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card glass">
+          <div class="benefit-icon">🎨</div>
+          <h3>Authentic Design</h3>
+          <p>Each piece is designed with authentic Kenyan cultural elements and modern aesthetics.</p>
+        </div>
+        <div class="benefit-card glass">
+          <div class="benefit-icon">👥</div>
+          <h3>Community Impact</h3>
+          <p>Your purchase supports local artisans and contributes to community development projects.</p>
+        </div>
+        <div class="benefit-card glass">
+          <div class="benefit-icon">🌱</div>
+          <h3>Sustainable Practices</h3>
+          <p>We prioritize environmentally conscious materials and ethical production methods.</p>
+        </div>
+        <div class="benefit-card glass">
+          <div class="benefit-icon">🚚</div>
+          <h3>Worldwide Shipping</h3>
+          <p>We deliver our fashion pieces to customers around the globe with secure packaging.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Care -->
+    <section class="section reveal customer-care" aria-label="Customer care information">
+      <div class="care-content">
+        <div class="care-info glass">
+          <h3>Need Assistance?</h3>
+          <p>Our fashion consultants are here to help you find the perfect piece or answer any questions.</p>
+          <div class="contact-options">
+            <a href="/src/contact.html" class="btn btn-secondary">Contact Support</a>
+            <a href="/services.html" class="btn btn-outline">Book Consultation</a>
+          </div>
+        </div>
+        <div class="care-policies glass">
+          <h3>Shopping Policies</h3>
+          <ul class="policy-list">
+            <li><strong>Free Shipping:</strong> Orders over KES 20,000</li>
+            <li><strong>Returns:</strong> 14-day return policy</li>
+            <li><strong>Exchange:</strong> Size exchanges within 7 days</li>
+            <li><strong>Care Instructions:</strong> Included with each item</li>
+            <li><strong>Authenticity:</strong> Certificate of authenticity provided</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="section reveal newsletter-section" aria-label="Newsletter signup">
+      <div class="newsletter-content glass">
+        <div class="newsletter-text">
+          <h2>Stay Updated with New Arrivals</h2>
+          <p>Be the first to know about new collections, exclusive pieces, and special offers.</p>
+        </div>
+        <form class="newsletter-form" aria-label="Newsletter subscription">
+          <div class="form-group">
+            <input type="email" placeholder="Enter your email address" required aria-label="Email address" />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+          <p class="newsletter-disclaimer">
+            <small>Join 3,000+ fashion enthusiasts. Get 10% off your first purchase!</small>
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shopping Cart Sidebar (Hidden by default) -->
+  <aside class="cart-sidebar" id="cart-sidebar" aria-label="Shopping cart">
+    <div class="cart-header">
+      <h3>Shopping Cart</h3>
+      <button class="close-cart">×</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <div class="empty-cart">
+        <p>Your cart is empty</p>
+        <a href="#products-grid" class="btn btn-secondary">Continue Shopping</a>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <div class="subtotal">
+          <span>Subtotal: </span>
+          <span id="cart-subtotal">KES 0</span>
+        </div>
+      </div>
+      <button class="btn btn-primary checkout-btn">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <footer class="footer glass" role="contentinfo">
+    <div class="footer-content">
+      <p>© <span id="year"></span> Neon Kenya — Fashion Designer & Model</p>
+      <div class="footer-links">
+        <a href="/shipping.html">Shipping Info</a>
+        <a href="/returns.html">Returns & Exchanges</a>
+        <a href="/size-guide.html">Size Guide</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script type="module" src="src/js/main.js"></script>
+  <script>
+    // Shop functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      // Category filtering
+      const categoryTabs = document.querySelectorAll('.category-tab');
+      const products = document.querySelectorAll('.product-card');
+      
+      categoryTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          categoryTabs.forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+          
+          const category = this.dataset.category;
+          products.forEach(product => {
+            if (category === 'all' || product.dataset.category === category) {
+              product.style.display = 'block';
+            } else {
+              product.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Gift card amount selection
+      const amountBtns = document.querySelectorAll('.amount-btn');
+      amountBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          amountBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+
+      // Shopping cart functionality (basic)
+      const cartBtn = document.querySelector('.cart-btn');
+      const cartSidebar = document.getElementById('cart-sidebar');
+      const closeCart = document.querySelector('.close-cart');
+      const addToCartBtns = document.querySelectorAll('.add-to-cart');
+      let cartCount = 0;
+
+      // Toggle cart sidebar
+      cartBtn.addEventListener('click', () => {
+        cartSidebar.classList.toggle('open');
+      });
+
+      closeCart.addEventListener('click', () => {
+        cartSidebar.classList.remove('open');
+      });
+
+      // Add to cart functionality
+      addToCartBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          cartCount++;
+          document.querySelector('.cart-count').textContent = cartCount;
+          
+          // Add visual feedback
+          this.textContent = 'Added!';
+          this.style.background = '#10B981';
+          
+          setTimeout(() => {
+            this.textContent = this.dataset.productId === '6' ? 'Purchase Gift Card' : 'Add to Cart';
+            this.style.background = '';
+          }, 1000);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -15,7 +15,8 @@
     "lint": "eslint src/js server --ext .js",
     "lint:fix": "eslint src/js server --ext .js --fix",
     "format": "prettier --write \"**/*.{js,html,css,md}\"",
-    "deploy": "npm run build && npm run start"
+    "deploy": "npm run build && npm run start",
+    "generate:og": "node scripts/generate-og.mjs"
   },
   "keywords": [
     "fashion",
@@ -62,7 +63,8 @@
     "postcss": "^8.4.32",
     "postcss-cli": "^11.0.0",
     "autoprefixer": "^10.4.16",
-    "esbuild": "^0.19.8"
+    "esbuild": "^0.19.8",
+    "sharp": "^0.33.4"
   },
   "browserslist": [
     "> 1%",
