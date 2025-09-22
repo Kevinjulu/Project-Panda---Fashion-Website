@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neon Kenya — Fashion Designer & Model</title>
+  <meta name="description" content="Neon Kenya - Fashion Designer & Model. Discover unique collections: runway, editorial, streetwear, and couture designs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Manrope:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="/public/images/favicon.svg" />
+  <link rel="stylesheet" href="src/css/styles.css" />
+  <link rel="stylesheet" href="src/css/components.css" />
+  <link rel="stylesheet" href="src/css/animations.css" />
+</head>
+<body>
+  <canvas id="particles" class="particles"></canvas>
+  <header class="navbar glass" role="banner">
+    <div class="nav-left">
+      <a href="/" class="brand">
+        <img src="public/images/logo.svg" alt="Designer logo" class="logo" />
+        <span class="brand-name">NEON KENYA</span>
+      </a>
+    </div>
+    <nav class="nav-center" role="navigation" aria-label="Main navigation">
+      <a href="/" class="nav-link active">Home</a>
+      <a href="/about.html" class="nav-link">About</a>
+      <a href="/src/portfolio.html" class="nav-link">Portfolio</a>
+      <a href="/src/contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="btn btn-secondary">Login</button>
+      <a class="btn btn-accent" href="/src/contact.html">Sign Up Free</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section reveal" aria-label="Hero introduction">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Fashion Designer <br />
+          <span class="highlight">& Model</span>
+        </h1>
+        <p class="hero-subtitle">
+          Discover unique collections that blend Kenyan culture with modern aesthetics. 
+          From runway to streetwear, each piece tells a story.
+        </p>
+        <div class="hero-actions">
+          <a href="/src/portfolio.html" class="btn btn-primary">View Portfolio</a>
+          <a href="/src/contact.html" class="btn btn-secondary">Book Consultation</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="public/images/hero.svg" alt="Fashion designer showcase" />
+      </div>
+    </section>
+
+    <section class="section reveal" aria-label="Featured collections">
+      <h2 class="section-title">Featured Collections</h2>
+      <div class="grid">
+        <article class="card glass">
+          <img src="public/images/gallery-1.svg" alt="Neon Nights Runway Collection" />
+          <div class="card-body">
+            <h3>Neon Nights</h3>
+            <p>Electric silhouettes that illuminate the runway with vibrant energy and bold statements.</p>
+            <a href="/src/portfolio.html" class="btn btn-accent">Explore</a>
+          </div>
+        </article>
+        <article class="card glass">
+          <img src="public/images/gallery-2.svg" alt="Coastal Hues Editorial" />
+          <div class="card-body">
+            <h3>Coastal Hues</h3>
+            <p>Ocean-inspired blends capturing the essence of Kenya's beautiful coastline.</p>
+            <a href="/src/portfolio.html" class="btn btn-accent">Explore</a>
+          </div>
+        </article>
+        <article class="card glass">
+          <img src="public/images/gallery-3.svg" alt="Matatu Vibes Streetwear" />
+          <div class="card-body">
+            <h3>Matatu Vibes</h3>
+            <p>Vibrant urban energy inspired by Nairobi's colorful matatu culture.</p>
+            <a href="/src/portfolio.html" class="btn btn-accent">Explore</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" aria-label="Services">
+      <h2 class="section-title">Services</h2>
+      <div class="grid">
+        <div class="service-card glass">
+          <h3>Design Consultation</h3>
+          <p>Personalized fashion design services for individuals and brands.</p>
+        </div>
+        <div class="service-card glass">
+          <h3>Runway Modeling</h3>
+          <p>Professional runway modeling for fashion shows and events.</p>
+        </div>
+        <div class="service-card glass">
+          <h3>Editorial Modeling</h3>
+          <p>Creative editorial shoots for magazines and brands.</p>
+        </div>
+        <div class="service-card glass">
+          <h3>Social Collaboration</h3>
+          <p>Brand partnerships and social media collaborations.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass" role="contentinfo">
+    <p>© <span id="year"></span> Neon Kenya — Fashion Designer & Model</p>
+  </footer>
+  <script type="module" src="src/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Neon Kenya</title>
+  <meta name="description" content="Learn about Neon Kenya's journey in fashion design and modeling. Discover the story behind unique Kenyan-inspired collections." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Manrope:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="/public/images/favicon.svg" />
+  <link rel="stylesheet" href="src/css/styles.css" />
+  <link rel="stylesheet" href="src/css/components.css" />
+  <link rel="stylesheet" href="src/css/animations.css" />
+</head>
+<body>
+  <canvas id="particles" class="particles"></canvas>
+  <header class="navbar glass" role="banner">
+    <div class="nav-left">
+      <a href="/" class="brand">
+        <img src="public/images/logo.svg" alt="Designer logo" class="logo" />
+        <span class="brand-name">NEON KENYA</span>
+      </a>
+    </div>
+    <nav class="nav-center" role="navigation" aria-label="Main navigation">
+      <a href="/" class="nav-link">Home</a>
+      <a href="/about.html" class="nav-link active">About</a>
+      <a href="/src/portfolio.html" class="nav-link">Portfolio</a>
+      <a href="/src/contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="btn btn-secondary">Login</button>
+      <a class="btn btn-accent" href="/src/contact.html">Sign Up Free</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section reveal" aria-label="About introduction">
+      <h1 class="section-title">About Neon Kenya</h1>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="lead">
+            Fashion designer and model passionate about blending Kenyan culture with contemporary design.
+          </p>
+          <p>
+            Born and raised in Kenya, I draw inspiration from the vibrant colors of matatu culture, 
+            the serene beauty of our coastline, and the dynamic energy of urban Nairobi. My collections 
+            tell stories that celebrate African aesthetics while embracing global fashion trends.
+          </p>
+          <p>
+            From runway shows in Nairobi to editorial shoots across East Africa, I've had the privilege 
+            of working with various brands and photographers who share my vision of authentic, bold fashion.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="public/images/hero.svg" alt="Neon Kenya fashion designer portrait" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" aria-label="Experience">
+      <h2 class="section-title">Experience & Achievements</h2>
+      <div class="timeline">
+        <div class="timeline-item glass">
+          <h3>2024 - Present</h3>
+          <h4>Freelance Fashion Designer & Model</h4>
+          <p>Creating custom designs and modeling for various fashion brands across Kenya.</p>
+        </div>
+        <div class="timeline-item glass">
+          <h3>2023</h3>
+          <h4>Nairobi Fashion Week Participant</h4>
+          <p>Showcased "Neon Nights" collection at Kenya's premier fashion event.</p>
+        </div>
+        <div class="timeline-item glass">
+          <h3>2022</h3>
+          <h4>Editorial Collaborations</h4>
+          <p>Featured in multiple fashion magazines and digital campaigns.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" aria-label="Philosophy">
+      <h2 class="section-title">Design Philosophy</h2>
+      <div class="grid">
+        <div class="philosophy-card glass">
+          <h3>Cultural Authenticity</h3>
+          <p>Every piece reflects genuine Kenyan aesthetics and storytelling traditions.</p>
+        </div>
+        <div class="philosophy-card glass">
+          <h3>Sustainable Fashion</h3>
+          <p>Committed to ethical practices and environmentally conscious design choices.</p>
+        </div>
+        <div class="philosophy-card glass">
+          <h3>Bold Innovation</h3>
+          <p>Pushing boundaries while respecting traditional craftsmanship and techniques.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass" role="contentinfo">
+    <p>© <span id="year"></span> Neon Kenya — Fashion Designer & Model</p>
+  </footer>
+  <script type="module" src="src/js/main.js"></script>
+</body>
+</html>

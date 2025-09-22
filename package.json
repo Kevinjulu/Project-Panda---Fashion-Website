@@ -1,0 +1,72 @@
+{
+  "name": "neon-kenya-fashion-website",
+  "version": "1.0.0",
+  "description": "Professional fashion designer website for Neon Kenya - showcasing collections, modeling portfolio, and design services",
+  "main": "server/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "dev:frontend": "live-server --port=8080 --entry-file=index.html",
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "postcss src/css/*.css --dir dist/css",
+    "build:js": "esbuild src/js/*.js --bundle --outdir=dist/js --minify",
+    "test": "jest",
+    "lint": "eslint src/js server --ext .js",
+    "lint:fix": "eslint src/js server --ext .js --fix",
+    "format": "prettier --write \"**/*.{js,html,css,md}\"",
+    "deploy": "npm run build && npm run start"
+  },
+  "keywords": [
+    "fashion",
+    "designer",
+    "model",
+    "kenya",
+    "african-fashion",
+    "portfolio",
+    "runway",
+    "streetwear",
+    "couture"
+  ],
+  "author": {
+    "name": "Kevinjulu",
+    "email": "kevinjulu@gmail.com",
+    "url": "https://github.com/Kevinjulu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kevinjulu/Project-Panda---Fashion-Website.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "mongoose": "^8.0.3",
+    "dotenv": "^16.3.1",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "compression": "^1.7.4",
+    "express-rate-limit": "^7.1.5",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "live-server": "^1.2.2",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "jest": "^29.7.0",
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0",
+    "autoprefixer": "^10.4.16",
+    "esbuild": "^0.19.8"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
