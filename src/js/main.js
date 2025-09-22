@@ -25,6 +25,32 @@ if (main){
   });
 })();
 
+// Sliding nav indicator
+(function navIndicator(){
+  const nav = document.querySelector('.nav-center');
+  if(!nav) return;
+  const indicator = document.createElement('span');
+  indicator.className = 'nav-indicator';
+  nav.classList.add('has-indicator');
+  nav.appendChild(indicator);
+  const links = Array.from(nav.querySelectorAll('.nav-link'));
+  const activeOrFirst = ()=> links.find(l=>l.classList.contains('is-active')) || links[0];
+  function moveTo(el){
+    const nr = nav.getBoundingClientRect();
+    const r = el.getBoundingClientRect();
+    const x = r.left - nr.left + 10; // account for link padding
+    const w = Math.max(0, r.width - 20);
+    indicator.style.width = `${w}px`;
+    indicator.style.transform = `translateX(${Math.max(0,x)}px)`;
+  }
+  moveTo(activeOrFirst());
+  links.forEach(l=>{
+    l.addEventListener('mouseenter', ()=> moveTo(l));
+    l.addEventListener('mouseleave', ()=> moveTo(activeOrFirst()));
+  });
+  window.addEventListener('resize', ()=> moveTo(activeOrFirst()));
+})();
+
 // Intercept internal navigation for a smooth exit animation
 document.addEventListener('click', (e)=>{
   const a = e.target.closest('a');

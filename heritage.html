@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cultural Heritage — Neon Kenya</title>
+  <meta name="description" content="Discover the rich cultural heritage behind Neon Kenya's designs. Explore traditional Kenyan textiles, patterns, and the cultural significance woven into each piece." />
+  <meta name="keywords" content="Kenyan culture, traditional textiles, African patterns, Maasai fashion, Kikuyu designs, Luo heritage, cultural fashion Kenya" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Manrope:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/public/images/favicon.svg" />
+  <link rel="stylesheet" href="src/css/styles.css" />
+  <link rel="stylesheet" href="src/css/components.css" />
+  <link rel="stylesheet" href="src/css/animations.css" />
+</head>
+<body>
+  <canvas id="particles" class="particles"></canvas>
+  <header class="navbar glass" role="banner">
+    <div class="nav-left">
+      <a href="/" class="brand">
+        <img src="public/images/logo.svg" alt="Designer logo" class="logo" />
+        <span class="brand-name">NEON KENYA</span>
+      </a>
+    </div>
+    <nav class="nav-center" role="navigation" aria-label="Main navigation">
+      <a href="/" class="nav-link">Home</a>
+      <a href="/about.html" class="nav-link">About</a>
+      <a href="/collections.html" class="nav-link">Collections</a>
+      <a href="/heritage.html" class="nav-link active">Heritage</a>
+      <a href="/src/contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="btn btn-secondary">Login</button>
+      <a class="btn btn-accent" href="/collections.html">Explore Collections</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section reveal hero-heritage" aria-label="Cultural heritage introduction">
+      <div class="heritage-hero-content">
+        <h1 class="section-title">Cultural Heritage</h1>
+        <p class="section-subtitle">
+          Every thread tells a story. Discover the rich tapestry of Kenyan culture that inspires our designs, 
+          from ancient traditions to modern interpretations of African artistry.
+        </p>
+      </div>
+    </section>
+
+    <!-- Introduction to Kenyan Fashion -->
+    <section class="section reveal" aria-label="Kenyan Fashion Introduction">
+      <div class="heritage-intro">
+        <div class="intro-content">
+          <h2>The Soul of Kenyan Fashion</h2>
+          <p class="lead">
+            Kenya's fashion heritage spans centuries, with each community contributing unique patterns, 
+            colors, and techniques that reflect their connection to the land and their spiritual beliefs.
+          </p>
+          <p>
+            From the flowing kanga and kitenge cloths to the intricate beadwork of the Maasai, 
+            Kenyan fashion has always been about more than clothing—it's about identity, 
+            community, and storytelling through fabric and design.
+          </p>
+        </div>
+        <div class="intro-image">
+          <img src="public/images/hero.svg" alt="Traditional Kenyan fashion elements" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Cultural Communities -->
+    <section class="section reveal" aria-label="Cultural Communities">
+      <h2 class="section-title">Cultural Inspirations</h2>
+      <div class="communities-grid">
+        
+        <article class="community-card glass">
+          <div class="community-header">
+            <h3>Maasai Heritage</h3>
+            <span class="community-region">Kajiado & Narok</span>
+          </div>
+          <div class="community-content">
+            <p>
+              The Maasai's vibrant red shukas and intricate beadwork inspire our bold color palettes 
+              and geometric patterns. Each bead color carries meaning—red for bravery, blue for energy, 
+              white for peace.
+            </p>
+            <div class="cultural-elements">
+              <span class="element">Geometric Patterns</span>
+              <span class="element">Bold Red Accents</span>
+              <span class="element">Beadwork Details</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="community-card glass">
+          <div class="community-header">
+            <h3>Kikuyu Traditions</h3>
+            <span class="community-region">Central Kenya</span>
+          </div>
+          <div class="community-content">
+            <p>
+              The Kikuyu's connection to Mt. Kenya and agricultural traditions influence our earth-toned 
+              collections. Traditional leather work and natural dyeing techniques inspire sustainable fashion practices.
+            </p>
+            <div class="cultural-elements">
+              <span class="element">Earth Tones</span>
+              <span class="element">Natural Fibers</span>
+              <span class="element">Agricultural Motifs</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="community-card glass">
+          <div class="community-header">
+            <h3>Luo Aesthetics</h3>
+            <span class="community-region">Western Kenya</span>
+          </div>
+          <div class="community-content">
+            <p>
+              The Luo's sophisticated use of metals and their connection to Lake Victoria inspire our 
+              contemporary jewelry and flowing silhouettes that mirror the lake's gentle waves.
+            </p>
+            <div class="cultural-elements">
+              <span class="element">Flowing Silhouettes</span>
+              <span class="element">Metallic Accents</span>
+              <span class="element">Water-Inspired Designs</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="community-card glass">
+          <div class="community-header">
+            <h3>Coastal Swahili</h3>
+            <span class="community-region">Coastal Region</span>
+          </div>
+          <div class="community-content">
+            <p>
+              The Swahili culture's blend of African, Arab, and Asian influences creates our most 
+              cosmopolitan pieces. Intricate embroidery and flowing fabrics reflect centuries of cultural exchange.
+            </p>
+            <div class="cultural-elements">
+              <span class="element">Intricate Embroidery</span>
+              <span class="element">Flowing Fabrics</span>
+              <span class="element">Cultural Fusion</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Traditional Textiles -->
+    <section class="section reveal" aria-label="Traditional Textiles">
+      <h2 class="section-title">Traditional Textiles & Patterns</h2>
+      <div class="textiles-showcase">
+        
+        <div class="textile-item glass">
+          <div class="textile-visual">
+            <div class="pattern-sample kanga-pattern"></div>
+          </div>
+          <div class="textile-info">
+            <h3>Kanga</h3>
+            <p>
+              Traditional East African printed cloth with Swahili sayings. Each kanga tells a story 
+              through its colors, patterns, and inscribed messages of wisdom, love, or social commentary.
+            </p>
+            <div class="textile-significance">
+              <strong>Cultural Meaning:</strong> Communication through fabric
+            </div>
+          </div>
+        </div>
+
+        <div class="textile-item glass">
+          <div class="textile-visual">
+            <div class="pattern-sample kitenge-pattern"></div>
+          </div>
+          <div class="textile-info">
+            <h3>Kitenge</h3>
+            <p>
+              Vibrant wax-print fabric featuring bold patterns and bright colors. Originally from West Africa 
+              but adopted throughout East Africa, kitenge represents celebration and cultural pride.
+            </p>
+            <div class="textile-significance">
+              <strong>Cultural Meaning:</strong> Celebration and identity
+            </div>
+          </div>
+        </div>
+
+        <div class="textile-item glass">
+          <div class="textile-visual">
+            <div class="pattern-sample shuka-pattern"></div>
+          </div>
+          <div class="textile-info">
+            <h3>Shuka</h3>
+            <p>
+              Traditional Maasai blanket in red and blue checks. The distinctive pattern and colors 
+              represent the Maasai's connection to the land and their warrior heritage.
+            </p>
+            <div class="textile-significance">
+              <strong>Cultural Meaning:</strong> Warrior strength and protection
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Modern Interpretation -->
+    <section class="section reveal" aria-label="Modern Interpretation">
+      <div class="modern-heritage">
+        <div class="modern-text">
+          <h2>Modern African Fashion Movement</h2>
+          <p class="lead">
+            Today's Kenyan fashion scene represents a renaissance of African design, 
+            where traditional elements meet contemporary global trends.
+          </p>
+          <p>
+            At Neon Kenya, we're part of a movement that celebrates our heritage while 
+            pushing boundaries. We work with local artisans to preserve traditional 
+            techniques while creating pieces for the modern world.
+          </p>
+          <div class="movement-stats">
+            <div class="stat-item">
+              <strong>50+</strong>
+              <span>Local Artisans Supported</span>
+            </div>
+            <div class="stat-item">
+              <strong>15</strong>
+              <span>Traditional Techniques Preserved</span>
+            </div>
+            <div class="stat-item">
+              <strong>100%</strong>
+              <span>Cultural Authenticity</span>
+            </div>
+          </div>
+        </div>
+        <div class="modern-gallery">
+          <div class="gallery-item">
+            <img src="public/images/gallery-1.svg" alt="Modern interpretation of traditional patterns" />
+          </div>
+          <div class="gallery-item">
+            <img src="public/images/gallery-2.svg" alt="Contemporary African fashion" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cultural Preservation -->
+    <section class="section reveal preservation-section" aria-label="Cultural Preservation">
+      <h2 class="section-title">Preserving Our Legacy</h2>
+      <div class="preservation-content">
+        <div class="preservation-mission glass">
+          <h3>Our Commitment</h3>
+          <p>
+            Every design we create honors the cultural significance of its inspiration. 
+            We work closely with cultural experts and community elders to ensure 
+            authentic representation and respectful interpretation.
+          </p>
+          <ul class="commitment-list">
+            <li>Collaborate with traditional artisans</li>
+            <li>Support local textile communities</li>
+            <li>Educate about cultural significance</li>
+            <li>Promote sustainable practices</li>
+            <li>Give back to source communities</li>
+          </ul>
+        </div>
+        <div class="preservation-impact glass">
+          <h3>Community Impact</h3>
+          <p>
+            Through our heritage-inspired collections, we create economic opportunities 
+            for traditional craftspeople while introducing global audiences to Kenya's 
+            rich cultural tapestry.
+          </p>
+          <div class="impact-metrics">
+            <div class="metric">
+              <span class="metric-value">25</span>
+              <span class="metric-label">Artisan Families Supported</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">12</span>
+              <span class="metric-label">Cultural Workshops Held</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">5</span>
+              <span class="metric-label">Heritage Collections Created</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Heritage CTA -->
+    <section class="section reveal heritage-cta" aria-label="Explore heritage collections">
+      <div class="cta-content">
+        <h2>Experience Cultural Fashion</h2>
+        <p>
+          Discover how traditional Kenyan heritage translates into contemporary fashion. 
+          Each piece tells a story of culture, community, and craftsmanship.
+        </p>
+        <div class="cta-actions">
+          <a href="/collections.html" class="btn btn-primary">Explore Heritage Collections</a>
+          <a href="/services.html" class="btn btn-secondary">Commission Cultural Piece</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass" role="contentinfo">
+    <p>© <span id="year"></span> Neon Kenya — Fashion Designer & Model</p>
+  </footer>
+  <script type="module" src="src/js/main.js"></script>
+</body>
+</html>
