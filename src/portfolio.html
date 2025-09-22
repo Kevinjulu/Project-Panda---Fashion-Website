@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Neon Kenya</title>
+  <meta name="description" content="Explore collections by category: runway, editorial, streetwear, couture." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Manrope:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+  <canvas id="particles" class="particles"></canvas>
+  <header class="navbar glass" role="banner">
+    <div class="nav-left">
+      <a href="/index.html" class="brand">
+        <img src="/images/logo.svg" alt="Designer logo" class="logo" />
+        <span class="brand-name">NEON KENYA</span>
+      </a>
+    </div>
+    <nav class="nav-center" role="navigation" aria-label="Main navigation">
+      <a href="/index.html" class="nav-link">Home</a>
+      <a href="/about.html" class="nav-link">About</a>
+      <a href="/portfolio.html" class="nav-link active">Portfolio</a>
+      <a href="/contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="btn btn-secondary">Login</button>
+      <a class="btn btn-accent" href="/contact.html">Sign Up Free</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section reveal" aria-label="Portfolio filters">
+      <h1 class="section-title">Portfolio</h1>
+      <div class="filters">
+        <button class="btn btn-secondary filter-btn" data-filter="all">All</button>
+        <button class="btn btn-secondary filter-btn" data-filter="runway">Runway</button>
+        <button class="btn btn-secondary filter-btn" data-filter="editorial">Editorial</button>
+        <button class="btn btn-secondary filter-btn" data-filter="streetwear">Streetwear</button>
+        <button class="btn btn-secondary filter-btn" data-filter="couture">Couture</button>
+      </div>
+    </section>
+
+    <section class="section reveal" aria-label="Portfolio gallery">
+      <div class="grid portfolio-grid" id="portfolio-grid">
+        <article class="card glass" data-category="runway">
+          <img src="/images/gallery-1.svg" alt="Runway: Neon Nights" />
+          <div class="card-body"><h3>Runway: Neon Nights</h3><p>Electric silhouettes.</p></div>
+        </article>
+        <article class="card glass" data-category="editorial">
+          <img src="/images/gallery-2.svg" alt="Editorial: Coastal Hues" />
+          <div class="card-body"><h3>Editorial: Coastal Hues</h3><p>Ocean-inspired blends.</p></div>
+        </article>
+        <article class="card glass" data-category="streetwear">
+          <img src="/images/gallery-3.svg" alt="Streetwear: Matatu Vibes" />
+          <div class="card-body"><h3>Streetwear: Matatu Vibes</h3><p>Vibrant urban energy.</p></div>
+        </article>
+        <article class="card glass" data-category="couture">
+          <img src="/images/gallery-1.svg" alt="Couture: Emerald Lines" />
+          <div class="card-body"><h3>Couture: Emerald Lines</h3><p>Handcrafted neon couture.</p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass" role="contentinfo">
+    <p>© <span id="year"></span> Neon Kenya — Fashion Designer & Model</p>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

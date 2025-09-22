@@ -1,0 +1,18 @@
+/* Scroll reveal */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease, transform .6s ease}
+.reveal.is-visible{opacity:1;transform:none}
+
+/* Glow pulse */
+@keyframes glow{
+  0%,100%{box-shadow:0 0 12px rgba(57,255,20,0.35)}
+  50%{box-shadow:0 0 22px rgba(57,255,20,0.75)}
+}
+.glow{animation:glow 3s ease-in-out infinite}
+
+/* Floating particles emphasis */
+@keyframes floatSlow{
+  0%{transform:translateY(0)}
+  50%{transform:translateY(-6px)}
+  100%{transform:translateY(0)}
+}
+.floating{animation:floatSlow 6s ease-in-out infinite}

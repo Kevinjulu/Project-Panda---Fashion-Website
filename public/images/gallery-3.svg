@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#0d0d0f"/>
+  <rect x="80" y="80" width="640" height="440" rx="24" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="180" y="220" width="120" height="120" rx="12" fill="#ffef00" opacity="0.4"/>
+  <circle cx="420" cy="300" r="60" fill="#39ff14" opacity="0.5"/>
+  <text x="50%" y="92%" fill="#f2f6f9" font-family="Poppins" font-size="28" font-weight="700" text-anchor="middle">Streetwear — Matatu Vibes</text>
+</svg>
