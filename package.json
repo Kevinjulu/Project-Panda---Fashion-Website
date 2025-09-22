@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "description": "Professional fashion designer website for Neon Kenya - showcasing collections, modeling portfolio, and design services",
   "main": "server/server.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "start": "node server/server.js",
     "dev": "nodemon server/server.js",
     "dev:frontend": "live-server --port=8080 --entry-file=index.html",
-    "build": "npm run build:css && npm run build:js",
+    "build:clean": "rimraf dist",
     "build:css": "postcss src/css/*.css --dir dist/css",
-    "build:js": "esbuild src/js/*.js --bundle --outdir=dist/js --minify",
+    "build:js": "esbuild src/js/main.js --bundle --format=esm --outdir=dist/js --minify",
+    "build:html": "copyfiles -u 1 src/*.html dist",
+    "build:images": "copyfiles -u 2 public/images/**/* dist/images",
+    "build": "npm run build:clean && npm run build:css && npm run build:js && npm run build:html && npm run build:images",
     "test": "jest",
     "lint": "eslint src/js server --ext .js",
     "lint:fix": "eslint src/js server --ext .js --fix",
@@ -46,13 +49,13 @@
   "dependencies": {
     "express": "^4.18.2",
     "cors": "^2.8.5",
-    "mongoose": "^8.0.3",
     "dotenv": "^16.3.1",
     "helmet": "^7.1.0",
     "morgan": "^1.10.0",
     "compression": "^1.7.4",
     "express-rate-limit": "^7.1.5",
-    "validator": "^13.11.0"
+    "sqlite3": "^5.1.7",
+    "express-validator": "^7.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.2",
@@ -64,7 +67,9 @@
     "postcss-cli": "^11.0.0",
     "autoprefixer": "^10.4.16",
     "esbuild": "^0.19.8",
-    "sharp": "^0.33.4"
+    "sharp": "^0.33.4",
+    "rimraf": "^5.0.5",
+    "copyfiles": "^2.4.1"
   },
   "browserslist": [
     "> 1%",

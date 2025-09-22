@@ -95,8 +95,6 @@ Thumbs.db
 # Miscellaneous
 *.tgz
 *.tar.gz
-package-lock.json
-yarn.lock
 
 # Local development
 .local/

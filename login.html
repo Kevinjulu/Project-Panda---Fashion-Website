@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login — Neon Kenya</title>
+  <meta name="description" content="Login to access your account" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Manrope:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/styles.css" />
+  <link rel="stylesheet" href="src/css/components.css" />
+  <link rel="stylesheet" href="src/css/animations.css" />
+</head>
+<body>
+  <canvas id="particles" class="particles"></canvas>
+  
+  <header class="navbar glass" role="banner">
+    <div class="nav-left">
+      <a href="/" class="brand">
+        <img src="/images/logo.svg" alt="Designer logo" class="logo" />
+        <span class="brand-name">NEON KENYA</span>
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="/" class="btn btn-secondary"><i class="ri-home-5-line"></i> Back to Home</a>
+    </div>
+  </header>
+
+  <main class="admin-container">
+    <section class="section" style="max-width: 480px; margin: 80px auto;">
+      <div class="glass" style="padding: 32px; border-radius: 16px; text-align: center;">
+        <h1 class="section-title">Welcome Back</h1>
+        <p style="color: var(--muted); margin-bottom: 24px;">Sign in to your account</p>
+        
+        <form id="login-form" class="form" style="border: none; background: transparent; padding: 0;">
+          <div class="form-row">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" required placeholder="Enter your username" />
+          </div>
+          <div class="form-row">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required placeholder="Enter your password" />
+          </div>
+          <button class="btn btn-primary" type="submit" style="width: 100%; margin-top: 16px;">
+            <i class="ri-login-circle-line"></i> Sign In
+          </button>
+          <p id="form-status" role="status" aria-live="polite" class="status" style="margin-top: 16px;"></p>
+        </form>
+
+        <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border);">
+          <p style="color: var(--muted); font-size: 0.9rem;">
+            Don't have an account? 
+            <a href="/register.html" style="color: var(--neon); text-decoration: none;">Sign up here</a>
+          </p>
+          <div style="margin-top: 16px; padding: 12px; background: rgba(57, 255, 20, 0.1); border-radius: 8px; border: 1px solid rgba(57, 255, 20, 0.2);">
+            <p style="font-size: 0.85rem; color: var(--muted); margin: 0;">
+              <i class="ri-information-line"></i> 
+              <strong>Demo Account:</strong><br>
+              Username: <code>admin</code><br>
+              Password: <code>admin123</code>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass" role="contentinfo">
+    <p>© <span id="year"></span> Neon Kenya — Fashion Designer & Model</p>
+  </footer>
+
+  <script type="module" src="src/js/main.js"></script>
+  <script>
+    class LoginManager {
+      constructor() {
+        this.init();
+      }
+
+      init() {
+        const form = document.getElementById('login-form');
+        const status = document.getElementById('form-status');
+        
+        // Check if already logged in
+        const token = localStorage.getItem('auth_token');
+        if (token) {
+          this.checkTokenValidity(token);
+        }
+
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          
+          const formData = new FormData(form);
+          const credentials = Object.fromEntries(formData.entries());
+          
+          status.textContent = 'Signing in...';
+          status.style.color = 'var(--secondary)';
+          
+          try {
+            const response = await fetch('/api/auth/login', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(credentials)
+            });
+
+            const data = await response.json();
+
+            if (response.ok && data.ok) {
+              // Store token and user info
+              localStorage.setItem('auth_token', data.token);
+              localStorage.setItem('user_info', JSON.stringify(data.user));
+              
+              status.textContent = 'Login successful! Redirecting...';
+              status.style.color = 'var(--neon)';
+              
+              // Redirect based on role
+              setTimeout(() => {
+                if (data.user.role === 'admin') {
+                  window.location.href = '/admin.html';
+                } else {
+                  window.location.href = '/';
+                }
+              }, 1000);
+            } else {
+              throw new Error(data.error || 'Login failed');
+            }
+          } catch (error) {
+            console.error('Login error:', error);
+            status.textContent = error.message || 'Login failed. Please try again.';
+            status.style.color = '#ff4444';
+          }
+        });
+      }
+
+      async checkTokenValidity(token) {
+        try {
+          const response = await fetch('/api/auth/me', {
+            headers: {
+              'Authorization': `Bearer ${token}`
+            }
+          });
+
+          if (response.ok) {
+            // Token is valid, redirect to dashboard
+            const userData = await response.json();
+            if (userData.role === 'admin') {
+              window.location.href = '/admin.html';
+            } else {
+              window.location.href = '/';
+            }
+          } else {
+            // Token is invalid, remove it
+            localStorage.removeItem('auth_token');
+            localStorage.removeItem('user_info');
+          }
+        } catch (error) {
+          console.error('Token validation error:', error);
+          localStorage.removeItem('auth_token');
+          localStorage.removeItem('user_info');
+        }
+      }
+    }
+
+    // Initialize login manager
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => new LoginManager());
+    } else {
+      new LoginManager();
+    }
+  </script>
+</body>
+</html>
